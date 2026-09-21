@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-outro-08",
+  "category": "outro",
+  "prompt": "Square outro. Exact copy: AFTERGLOW / CARRY IT FORWARD. Style direction: black and amber.",
+  "createdAt": "2026-09-19T10:05:35.442Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "AFTERGLOW",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#120f14",
+          "foreground": "#f6ead6",
+          "accent": "#ffb600",
+          "muted": "#928780"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.05,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "outro-outro-1",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "outro",
+            "layout": "split",
+            "entrance": "wipe",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "title",
+                "text": "AFTERGLOW",
+                "emphasis": true
+              },
+              {
+                "role": "eyebrow",
+                "text": "CARRY IT FORWARD",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20431233,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.99,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 10.82,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00938,
+          "activeSamplePairs": 2,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "AFTERGLOW",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ff5c35",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.05,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "outro-aftglw-carry",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "outro",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "AFTERGLOW",
+                "emphasis": true
+              },
+              {
+                "role": "eyebrow",
+                "text": "CARRY IT FORWARD",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20326504,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.32,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01173,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-outro-08/A.mp4",
+    "B": "out/preferences/taste-outro-08/B.mp4"
+  }
+}

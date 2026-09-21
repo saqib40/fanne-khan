@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-outro-09",
+  "category": "outro",
+  "prompt": "Portrait outro. Exact copy: MINT CONDITION / BUILT TO LAST. Style direction: technical mint.",
+  "createdAt": "2026-09-19T10:06:25.227Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "MINT CONDITION",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#071a14",
+          "foreground": "#ebfff6",
+          "accent": "#61f2ad",
+          "muted": "#7ca998"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "outro-mint-condition",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "outro",
+            "layout": "split",
+            "entrance": "rise",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "MINT CONDITION",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "BUILT TO LAST",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20328522,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.28,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 12.69,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00857,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "MINT CONDITION / BUILT TO LAST",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#14100f",
+          "foreground": "#fff3ed",
+          "accent": "#ffd866",
+          "muted": "#c6b8ab"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.05,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "outro-mint-condition",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "outro",
+            "layout": "left",
+            "entrance": "fade",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "MINT CONDITION",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "BUILT TO LAST",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20537980,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.37,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 13.74,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00942,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-outro-09/A.mp4",
+    "B": "out/preferences/taste-outro-09/B.mp4"
+  }
+}

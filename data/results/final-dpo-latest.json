@@ -1,0 +1,1250 @@
+{
+  "version": "1.0",
+  "createdAt": "2026-09-20T06:39:55.297Z",
+  "evaluationScope": "DPO generation, deterministic normalization, schema/content validation, repair, and 12-frame render hard gates; final MP4 encoding excluded",
+  "backend": "unsloth",
+  "model": "/home/saqu/personal/fanne-khan/training/runs/dpo-taste/adapter",
+  "promptFile": "data/benchmarks/final-prompts.json",
+  "candidateCount": 2,
+  "summary": {
+    "prompts": 12,
+    "successful": 12,
+    "successRate": 1,
+    "exactCopyPreserved": 12,
+    "exactCopyRate": 1,
+    "totalCandidates": 24,
+    "validCandidates": 22,
+    "candidateValidityRate": 0.917,
+    "winnersRepaired": 4,
+    "winnersNormalized": 1,
+    "meanScore": 83.34,
+    "latencySeconds": {
+      "mean": 35.86,
+      "median": 35.16,
+      "p95": 43.22,
+      "maximum": 43.92
+    }
+  },
+  "categories": {
+    "title": {
+      "prompts": 2,
+      "successful": 2,
+      "exactCopy": 2,
+      "meanLatencySeconds": 33.27,
+      "meanScore": 83.66
+    },
+    "quote": {
+      "prompts": 2,
+      "successful": 2,
+      "exactCopy": 2,
+      "meanLatencySeconds": 41.22,
+      "meanScore": 75.21
+    },
+    "product": {
+      "prompts": 2,
+      "successful": 2,
+      "exactCopy": 2,
+      "meanLatencySeconds": 33.2,
+      "meanScore": 85.56
+    },
+    "metric": {
+      "prompts": 2,
+      "successful": 2,
+      "exactCopy": 2,
+      "meanLatencySeconds": 38.47,
+      "meanScore": 84.72
+    },
+    "event": {
+      "prompts": 2,
+      "successful": 2,
+      "exactCopy": 2,
+      "meanLatencySeconds": 32.33,
+      "meanScore": 85.66
+    },
+    "outro": {
+      "prompts": 2,
+      "successful": 2,
+      "exactCopy": 2,
+      "meanLatencySeconds": 36.65,
+      "meanScore": 85.23
+    }
+  },
+  "records": [
+    {
+      "id": "final-title-01",
+      "category": "title",
+      "prompt": "Landscape kinetic title. Exact copy: FIELD NOTES / FROM THE EDGE. Style direction: warm paper, black ink, editorial serif, and a restrained red accent.",
+      "success": true,
+      "exactCopyPreserved": true,
+      "expectedLines": [
+        "FIELD NOTES",
+        "FROM THE EDGE"
+      ],
+      "renderedLines": [
+        "FIELD NOTES",
+        "FROM THE EDGE"
+      ],
+      "missingLines": [],
+      "unexpectedLines": [],
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "elapsedSeconds": 35.16,
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "FIELD NOTES",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#f0eadf",
+            "foreground": "#171713",
+            "accent": "#d00000",
+            "muted": "#7b7770"
+          },
+          "typography": {
+            "display": "fraunces",
+            "body": "inter",
+            "tracking": -0.03,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "glass",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "title-field-notes",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "title",
+              "layout": "left",
+              "entrance": "scale",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "FIELD NOTES",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "FROM THE EDGE",
+                  "emphasis": true
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 15.01,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 4.76,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01349,
+            "activeSamplePairs": 11,
+            "pass": true
+          }
+        },
+        "evaluatorSeconds": 7.82
+      }
+    },
+    {
+      "id": "final-title-02",
+      "category": "title",
+      "prompt": "Portrait kinetic title. Exact copy: MAKE ROOM / FOR THE UNEXPECTED. Style direction: midnight violet, soft lavender, geometric type, and measured motion.",
+      "success": true,
+      "exactCopyPreserved": true,
+      "expectedLines": [
+        "MAKE ROOM",
+        "FOR THE UNEXPECTED"
+      ],
+      "renderedLines": [
+        "MAKE ROOM",
+        "FOR THE UNEXPECTED"
+      ],
+      "missingLines": [],
+      "unexpectedLines": [],
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "elapsedSeconds": 31.38,
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Make room for the unexpected",
+          "fps": 30,
+          "width": 1080,
+          "height": 1920,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#090816",
+            "foreground": "#ebd8ff",
+            "accent": "#908eff",
+            "muted": "#9298b2"
+          },
+          "typography": {
+            "display": "space-grotesk",
+            "body": "inter",
+            "tracking": -0.03,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "orbit",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "title-make-room",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "title",
+              "layout": "left",
+              "entrance": "rise",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "MAKE ROOM",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "FOR THE UNEXPECTED",
+                  "emphasis": true
+                }
+              ]
+            }
+          ]
+        },
+        "score": 83.33,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 14.93,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 7.09,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.02131,
+            "activeSamplePairs": 10,
+            "pass": true
+          }
+        },
+        "evaluatorSeconds": 6.64
+      }
+    },
+    {
+      "id": "final-quote-01",
+      "category": "quote",
+      "prompt": "Square quote animation. Exact copy: Ideas become useful / when they can move. Style direction: quiet cream on forest green with subtle line-by-line timing.",
+      "success": true,
+      "exactCopyPreserved": true,
+      "expectedLines": [
+        "Ideas become useful",
+        "when they can move"
+      ],
+      "renderedLines": [
+        "Ideas become useful",
+        "when they can move"
+      ],
+      "missingLines": [],
+      "unexpectedLines": [],
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "elapsedSeconds": 39.3,
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Ideas become useful",
+          "fps": 30,
+          "width": 1080,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#f0ead1",
+            "foreground": "#171713",
+            "accent": "#715c1f",
+            "muted": "#716e61"
+          },
+          "typography": {
+            "display": "inter",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "quote-ideas",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "quote",
+              "layout": "split",
+              "entrance": "rise",
+              "exit": "shrink",
+              "lines": [
+                {
+                  "role": "title",
+                  "text": "Ideas become useful",
+                  "emphasis": true
+                },
+                {
+                  "role": "title",
+                  "text": "when they can move",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 76.67,
+        "repaired": true,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 14.89,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 5.35,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.04142,
+            "activeSamplePairs": 3,
+            "pass": true
+          }
+        },
+        "evaluatorSeconds": 4.88
+      }
+    },
+    {
+      "id": "final-quote-02",
+      "category": "quote",
+      "prompt": "Landscape quote animation. Exact copy: Patience is part / of the process. Style direction: refined monochrome typography with one amber emphasis.",
+      "success": true,
+      "exactCopyPreserved": true,
+      "expectedLines": [
+        "Patience is part",
+        "of the process"
+      ],
+      "renderedLines": [
+        "Patience is part",
+        "of the process"
+      ],
+      "missingLines": [],
+      "unexpectedLines": [],
+      "requestedCandidates": 2,
+      "validCandidates": 1,
+      "generationFailures": [
+        "Candidate 2: palette.accent: Accent/background contrast must be at least 3:1"
+      ],
+      "evaluationFailures": [],
+      "elapsedSeconds": 43.15,
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Patience is part of the process",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 150,
+          "palette": {
+            "background": "#f0eadf",
+            "foreground": "#171713",
+            "accent": "#b16700",
+            "muted": "#6d6a61"
+          },
+          "typography": {
+            "display": "inter",
+            "body": "inter",
+            "tracking": -0.03,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "quote-patience",
+              "startFrame": 0,
+              "durationInFrames": 150,
+              "kind": "quote",
+              "layout": "left",
+              "entrance": "rise",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "title",
+                  "text": "Patience is part",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "of the process",
+                  "emphasis": true
+                }
+              ]
+            }
+          ]
+        },
+        "score": 73.75,
+        "repaired": true,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 15.01,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 3.65,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 5,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01859,
+            "activeSamplePairs": 5,
+            "pass": true
+          }
+        },
+        "evaluatorSeconds": 4.88
+      }
+    },
+    {
+      "id": "final-product-01",
+      "category": "product",
+      "prompt": "Landscape product reveal. Exact copy: LUMA DESK / A clearer place to think / Shipping March 18. Style direction: deep navy, warm white, cyan detail, and restrained depth.",
+      "success": true,
+      "exactCopyPreserved": true,
+      "expectedLines": [
+        "LUMA DESK",
+        "A clearer place to think",
+        "Shipping March 18"
+      ],
+      "renderedLines": [
+        "LUMA DESK",
+        "A clearer place to think",
+        "Shipping March 18"
+      ],
+      "missingLines": [],
+      "unexpectedLines": [],
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "elapsedSeconds": 35.16,
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "LUMA DESK product reveal",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#131116",
+            "foreground": "#f6f4fa",
+            "accent": "#35dcff",
+            "muted": "#928c9a"
+          },
+          "typography": {
+            "display": "space-grotesk",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "orbit",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "product-luma-desk",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "product",
+              "layout": "left",
+              "entrance": "stagger",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "LUMA DESK",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "A clearer place to think",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "Shipping March 18",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 86.36,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 17.19,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 11.46,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.02092,
+            "activeSamplePairs": 11,
+            "pass": true
+          }
+        },
+        "evaluatorSeconds": 6.55
+      }
+    },
+    {
+      "id": "final-product-02",
+      "category": "product",
+      "prompt": "Portrait product launch. Exact copy: TANDEM / Work in the same direction / Version 1.4. Style direction: charcoal, acid lime, clean sans serif type, and crisp staggered motion.",
+      "success": true,
+      "exactCopyPreserved": true,
+      "expectedLines": [
+        "TANDEM",
+        "Work in the same direction",
+        "Version 1.4"
+      ],
+      "renderedLines": [
+        "TANDEM",
+        "Work in the same direction",
+        "Version 1.4"
+      ],
+      "missingLines": [],
+      "unexpectedLines": [],
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "elapsedSeconds": 31.25,
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "TANDEM launch",
+          "fps": 30,
+          "width": 1080,
+          "height": 1920,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#071a14",
+            "foreground": "#ebfff6",
+            "accent": "#61f2ad",
+            "muted": "#7ca998"
+          },
+          "typography": {
+            "display": "jetbrains-mono",
+            "body": "jetbrains-mono",
+            "tracking": -0.03,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "product-tandem",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "product",
+              "layout": "left",
+              "entrance": "stagger",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "TANDEM",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "Work in the same direction",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "Version 1.4",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84.76,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 17.28,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 12.69,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01916,
+            "activeSamplePairs": 4,
+            "pass": true
+          }
+        },
+        "evaluatorSeconds": 4.86
+      }
+    },
+    {
+      "id": "final-metric-01",
+      "category": "metric",
+      "prompt": "Square metric reveal. Exact copy: RETURNING CREATORS / 76% / MONTH OVER MONTH. Style direction: make the number dominant using oxblood, blush, and restrained motion.",
+      "success": true,
+      "exactCopyPreserved": true,
+      "expectedLines": [
+        "RETURNING CREATORS",
+        "76%",
+        "MONTH OVER MONTH"
+      ],
+      "renderedLines": [
+        "RETURNING CREATORS",
+        "76%",
+        "MONTH OVER MONTH"
+      ],
+      "missingLines": [],
+      "unexpectedLines": [],
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "elapsedSeconds": 43.22,
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Returning creators",
+          "fps": 30,
+          "width": 1080,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#f0eadf",
+            "foreground": "#171713",
+            "accent": "#bd5952",
+            "muted": "#504941"
+          },
+          "typography": {
+            "display": "space-grotesk",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "glass",
+            "intensity": 0.8
+          },
+          "segments": [
+            {
+              "id": "metric-returning",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "metric",
+              "layout": "left",
+              "entrance": "scale",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "RETURNING CREATORS",
+                  "emphasis": false
+                },
+                {
+                  "role": "metric",
+                  "text": "76%",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "MONTH OVER MONTH",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 85,
+        "repaired": true,
+        "normalized": [
+          "clamped accent intensity"
+        ],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 15.01,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 3.72,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01648,
+            "activeSamplePairs": 11,
+            "pass": true
+          }
+        },
+        "evaluatorSeconds": 6.94
+      }
+    },
+    {
+      "id": "final-metric-02",
+      "category": "metric",
+      "prompt": "Landscape metric reveal. Exact copy: MOMENTS SHIPPED / 1.8M / ACROSS 42 COUNTRIES. Style direction: near-black, white, electric blue, and technical typography.",
+      "success": true,
+      "exactCopyPreserved": true,
+      "expectedLines": [
+        "MOMENTS SHIPPED",
+        "1.8M",
+        "ACROSS 42 COUNTRIES"
+      ],
+      "renderedLines": [
+        "MOMENTS SHIPPED",
+        "1.8M",
+        "ACROSS 42 COUNTRIES"
+      ],
+      "missingLines": [],
+      "unexpectedLines": [],
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "elapsedSeconds": 33.72,
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "MOMENTS SHIPPED",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 150,
+          "palette": {
+            "background": "#070814",
+            "foreground": "#ebfff6",
+            "accent": "#35dcff",
+            "muted": "#717898"
+          },
+          "typography": {
+            "display": "jetbrains-mono",
+            "body": "jetbrains-mono",
+            "tracking": -0.03,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "metric-ship",
+              "startFrame": 0,
+              "durationInFrames": 150,
+              "kind": "metric",
+              "layout": "left",
+              "entrance": "rise",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "MOMENTS SHIPPED",
+                  "emphasis": false
+                },
+                {
+                  "role": "metric",
+                  "text": "1.8M",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "ACROSS 42 COUNTRIES",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84.44,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 19.14,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 12.18,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 5,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01196,
+            "activeSamplePairs": 5,
+            "pass": true
+          }
+        },
+        "evaluatorSeconds": 5.06
+      }
+    },
+    {
+      "id": "final-event-01",
+      "category": "event",
+      "prompt": "Portrait event announcement. Exact copy: CHENNAI · 12 APR / COMMON GROUND / Museum Theatre · 7 PM. Style direction: terracotta, cream, editorial hierarchy, and calm pacing.",
+      "success": true,
+      "exactCopyPreserved": true,
+      "expectedLines": [
+        "CHENNAI · 12 APR",
+        "COMMON GROUND",
+        "Museum Theatre · 7 PM"
+      ],
+      "renderedLines": [
+        "CHENNAI · 12 APR",
+        "COMMON GROUND",
+        "Museum Theatre · 7 PM"
+      ],
+      "missingLines": [],
+      "unexpectedLines": [],
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "elapsedSeconds": 32.11,
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Common Ground",
+          "fps": 30,
+          "width": 1080,
+          "height": 1920,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#eeeceb",
+            "foreground": "#171713",
+            "accent": "#e0420f",
+            "muted": "#716e61"
+          },
+          "typography": {
+            "display": "fraunces",
+            "body": "inter",
+            "tracking": -0.03,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "grid",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "title-common-ground",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "event",
+              "layout": "split",
+              "entrance": "wipe",
+              "exit": "cut",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "CHENNAI · 12 APR",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "COMMON GROUND",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "Museum Theatre · 7 PM",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 86.32,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 15.26,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 3.6,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.00898,
+            "activeSamplePairs": 2,
+            "pass": true
+          }
+        },
+        "evaluatorSeconds": 5.26
+      }
+    },
+    {
+      "id": "final-event-02",
+      "category": "event",
+      "prompt": "Square event announcement. Exact copy: PUNE · 3 MAY / SYSTEMS IN TYPE / Saturday · 11 AM. Style direction: cobalt, white, precise grid energy, and highly readable details.",
+      "success": true,
+      "exactCopyPreserved": true,
+      "expectedLines": [
+        "PUNE · 3 MAY",
+        "SYSTEMS IN TYPE",
+        "Saturday · 11 AM"
+      ],
+      "renderedLines": [
+        "PUNE · 3 MAY",
+        "SYSTEMS IN TYPE",
+        "Saturday · 11 AM"
+      ],
+      "missingLines": [],
+      "unexpectedLines": [],
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "elapsedSeconds": 32.55,
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Systems in Type",
+          "fps": 30,
+          "width": 1080,
+          "height": 1080,
+          "durationInFrames": 180,
+          "palette": {
+            "background": "#f0eadf",
+            "foreground": "#171713",
+            "accent": "#d04a13",
+            "muted": "#6d6a61"
+          },
+          "typography": {
+            "display": "space-grotesk",
+            "body": "inter",
+            "tracking": -0.03,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "grid",
+            "intensity": 0.5
+          },
+          "segments": [
+            {
+              "id": "title-systems",
+              "startFrame": 0,
+              "durationInFrames": 180,
+              "kind": "event",
+              "layout": "split",
+              "entrance": "rise",
+              "exit": "shrink",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "PUNE · 3 MAY",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "SYSTEMS IN TYPE",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "Saturday · 11 AM",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 85,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 15.01,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 3.76,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 6,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01825,
+            "activeSamplePairs": 5,
+            "pass": true
+          }
+        },
+        "evaluatorSeconds": 5.35
+      }
+    },
+    {
+      "id": "final-outro-01",
+      "category": "outro",
+      "prompt": "Landscape closing card. Exact copy: OPEN ENDED / KEEP ASKING BETTER QUESTIONS. Style direction: black, ivory, orange, confident final hold, and no additional text.",
+      "success": true,
+      "exactCopyPreserved": true,
+      "expectedLines": [
+        "OPEN ENDED",
+        "KEEP ASKING BETTER QUESTIONS"
+      ],
+      "renderedLines": [
+        "OPEN ENDED",
+        "KEEP ASKING BETTER QUESTIONS"
+      ],
+      "missingLines": [],
+      "unexpectedLines": [],
+      "requestedCandidates": 2,
+      "validCandidates": 1,
+      "generationFailures": [
+        "Candidate 2: palette.accent: Accent/background contrast must be at least 3:1"
+      ],
+      "evaluationFailures": [],
+      "elapsedSeconds": 43.92,
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "OPEN ENDED",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#fff1ed",
+            "foreground": "#211010",
+            "accent": "#b95f30",
+            "muted": "#c69b94"
+          },
+          "typography": {
+            "display": "space-grotesk",
+            "body": "inter",
+            "tracking": -0.03,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "title-open-ended",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "outro",
+              "layout": "left",
+              "entrance": "rise",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "title",
+                  "text": "OPEN ENDED",
+                  "emphasis": true
+                },
+                {
+                  "role": "eyebrow",
+                  "text": "KEEP ASKING BETTER QUESTIONS",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 85.71,
+        "repaired": true,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 16.63,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 4.02,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.00799,
+            "activeSamplePairs": 3,
+            "pass": true
+          }
+        },
+        "evaluatorSeconds": 4.93
+      }
+    },
+    {
+      "id": "final-outro-02",
+      "category": "outro",
+      "prompt": "Portrait closing card. Exact copy: NEXT LIGHT / SEE YOU TOMORROW. Style direction: deep teal, pale mint, gentle exit, and no additional call to action.",
+      "success": true,
+      "exactCopyPreserved": true,
+      "expectedLines": [
+        "NEXT LIGHT",
+        "SEE YOU TOMORROW"
+      ],
+      "renderedLines": [
+        "NEXT LIGHT",
+        "SEE YOU TOMORROW"
+      ],
+      "missingLines": [],
+      "unexpectedLines": [],
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "elapsedSeconds": 29.37,
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "NEXT LIGHT",
+          "fps": 30,
+          "width": 1080,
+          "height": 1920,
+          "durationInFrames": 150,
+          "palette": {
+            "background": "#ebfff6",
+            "foreground": "#1a2820",
+            "accent": "#125f55",
+            "muted": "#61746b"
+          },
+          "typography": {
+            "display": "inter",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "card-closing",
+              "startFrame": 0,
+              "durationInFrames": 150,
+              "kind": "outro",
+              "layout": "left",
+              "entrance": "stagger",
+              "exit": "shrink",
+              "lines": [
+                {
+                  "role": "title",
+                  "text": "NEXT LIGHT",
+                  "emphasis": true
+                },
+                {
+                  "role": "eyebrow",
+                  "text": "SEE YOU TOMORROW",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84.76,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 14.74,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 7.22,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 5,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.00937,
+            "activeSamplePairs": 5,
+            "pass": true
+          }
+        },
+        "evaluatorSeconds": 4.85
+      }
+    }
+  ]
+}

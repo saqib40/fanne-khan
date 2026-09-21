@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-event-03",
+  "category": "event",
+  "prompt": "Landscape event promo. Exact copy: AHMEDABAD · 3 DEC / NEW COMMONS / Designing spaces we share. Style direction: geometric coral.",
+  "createdAt": "2026-09-19T09:25:53.722Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "AHMEDABAD · 3 DEC / NEW COMMONS",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ff5c34",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "orbit",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "segment-1",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "event",
+            "layout": "left",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "AHMEDABAD · 3 DEC",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "NEW COMMONS",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Designing spaces we share",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20618493,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.32,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01577,
+          "activeSamplePairs": 11,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "New Commons",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#e04e24",
+          "muted": "#5b554e"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "orbit",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "title-new-commons",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "event",
+            "layout": "left",
+            "entrance": "stagger",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "AHMEDABAD · 3 DEC",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "NEW COMMONS",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Designing spaces we share",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20304306,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.32,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01544,
+          "activeSamplePairs": 11,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-event-03/A.mp4",
+    "B": "out/preferences/taste-event-03/B.mp4"
+  }
+}

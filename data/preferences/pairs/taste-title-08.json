@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-title-08",
+  "category": "title",
+  "prompt": "Square title motion design. Exact copy: THE WORK SPEAKS / Give it room. Style direction: high-contrast black and amber.",
+  "createdAt": "2026-09-19T08:22:09.788Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "The work speaks",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#211a14",
+          "foreground": "#fff1eb",
+          "accent": "#ff7616",
+          "muted": "#c69b91"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "title-work-speak",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "title",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "THE WORK SPEAKS",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Give it room",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20378765,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.57,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.43,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01042,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Give it room",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f2ef",
+          "accent": "#ff5c3a",
+          "muted": "#9298a5"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "title-work-speaks",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "title",
+            "layout": "split",
+            "entrance": "scale",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "THE WORK SPEAKS",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Give it room",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20483494,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.46,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.33,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00896,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-title-08/A.mp4",
+    "B": "out/preferences/taste-title-08/B.mp4"
+  }
+}

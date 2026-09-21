@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-quote-02",
+  "category": "quote",
+  "prompt": "Portrait quote motion design. Exact copy: The smallest choice / can redirect the whole. Style direction: soft lavender and contemplative.",
+  "createdAt": "2026-09-19T08:35:45.312Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "The smallest choice",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#357aed",
+          "muted": "#6d6a61"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "quote-enthusiasm",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "stagger",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "The smallest choice",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "can redirect the whole",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20272018,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.4,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.0204,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "The smallest choice can redirect the whole",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#eeeafb",
+          "foreground": "#201a33",
+          "accent": "#6846c7",
+          "muted": "#726b8a"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "quote-enthusiastic",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "quote",
+            "layout": "split",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "The smallest choice",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "can redirect the whole",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20481476,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 14.16,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 5.41,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.0207,
+          "activeSamplePairs": 7,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-quote-02/A.mp4",
+    "B": "out/preferences/taste-quote-02/B.mp4"
+  }
+}

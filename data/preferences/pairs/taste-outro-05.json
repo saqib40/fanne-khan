@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-outro-05",
+  "category": "outro",
+  "prompt": "Square outro. Exact copy: ODDLY USEFUL / KEEP THE STRANGE PART. Style direction: soft lavender.",
+  "createdAt": "2026-09-19T10:03:04.849Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Oddly useful",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#f5f7fa",
+          "foreground": "#111111",
+          "accent": "#704ade",
+          "muted": "#727781"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "outro-oddly-useful",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "outro",
+            "layout": "center",
+            "entrance": "fade",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "ODDLY USEFUL",
+                "emphasis": true
+              },
+              {
+                "role": "eyebrow",
+                "text": "KEEP THE STRANGE PART",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20529908,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.59,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 5.26,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.0109,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "ODDLY USEFUL",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f3eadf",
+          "foreground": "#201a1e",
+          "accent": "#4d2c7f",
+          "muted": "#60565b"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.05,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "outro-oddly-useful",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "outro",
+            "layout": "left",
+            "entrance": "stagger",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "title",
+                "text": "ODDLY USEFUL",
+                "emphasis": true
+              },
+              {
+                "role": "eyebrow",
+                "text": "KEEP THE STRANGE PART",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20634637,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 14.37,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 8.9,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01446,
+          "activeSamplePairs": 2,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-outro-05/A.mp4",
+    "B": "out/preferences/taste-outro-05/B.mp4"
+  }
+}

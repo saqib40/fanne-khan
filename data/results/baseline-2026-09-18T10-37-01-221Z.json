@@ -1,0 +1,180 @@
+{
+  "createdAt": "2026-09-18T10:37:01.220Z",
+  "model": "qwen2.5-coder:7b",
+  "candidateCount": 1,
+  "prompts": 3,
+  "successful": 1,
+  "successRate": 0.3333333333333333,
+  "meanLatencySeconds": 22.1,
+  "results": [
+    {
+      "id": "title-01",
+      "category": "title",
+      "prompt": "Landscape kinetic title: Make ideas move. Dark editorial style with a warm orange accent.",
+      "result": {
+        "prompt": "Landscape kinetic title: Make ideas move. Dark editorial style with a warm orange accent.",
+        "requestedCandidates": 1,
+        "validCandidates": 0,
+        "generationFailures": [
+          "Candidate 1: Content policy: style directions became on-screen copy (Dark editorial style with a warm orange accent)"
+        ],
+        "evaluationFailures": [],
+        "winner": null,
+        "alternatives": [],
+        "elapsedSeconds": 20.05
+      }
+    },
+    {
+      "id": "title-02",
+      "category": "title",
+      "prompt": "Square opening title reading Build for wonder, using optimistic geometric typography and cobalt blue.",
+      "result": {
+        "prompt": "Square opening title reading Build for wonder, using optimistic geometric typography and cobalt blue.",
+        "requestedCandidates": 1,
+        "validCandidates": 0,
+        "generationFailures": [
+          "Candidate 1: segments: The final segment must end with the composition"
+        ],
+        "evaluationFailures": [],
+        "winner": null,
+        "alternatives": [],
+        "elapsedSeconds": 14.71
+      }
+    },
+    {
+      "id": "title-03",
+      "category": "title",
+      "prompt": "Landscape cinematic title: The future stays curious. Minimal black and ivory with restrained motion.",
+      "result": {
+        "prompt": "Landscape cinematic title: The future stays curious. Minimal black and ivory with restrained motion.",
+        "requestedCandidates": 1,
+        "validCandidates": 1,
+        "generationFailures": [],
+        "evaluationFailures": [],
+        "winner": {
+          "spec": {
+            "version": "1.0",
+            "name": "The Future Stays Curious",
+            "fps": 30,
+            "width": 1920,
+            "height": 1080,
+            "durationInFrames": 180,
+            "palette": {
+              "background": "#000000",
+              "foreground": "#ffffff",
+              "accent": "#ffffff",
+              "muted": "#999999"
+            },
+            "typography": {
+              "display": "space-grotesk",
+              "body": "inter",
+              "tracking": 0,
+              "uppercaseTitles": true
+            },
+            "accent": {
+              "type": "none",
+              "intensity": 0
+            },
+            "segments": [
+              {
+                "id": "title",
+                "startFrame": 0,
+                "durationInFrames": 180,
+                "kind": "title",
+                "layout": "center",
+                "entrance": "rise",
+                "exit": "fade",
+                "lines": [
+                  {
+                    "role": "title",
+                    "text": "THE FUTURE STAYS",
+                    "emphasis": true
+                  },
+                  {
+                    "role": "subtitle",
+                    "text": "CURIOUS",
+                    "emphasis": true
+                  }
+                ]
+              }
+            ]
+          },
+          "score": 85.45,
+          "reasons": [
+            "passed every render hard gate",
+            "literal prompt coverage 27%",
+            "clear display/supporting hierarchy",
+            "restrained emphasis",
+            "copy fits role-specific length limits",
+            "3D accent remains subordinate"
+          ],
+          "evaluation": {
+            "status": "success",
+            "compositionId": "Generated",
+            "renderer": "angle",
+            "samples": 12,
+            "dimensions": {
+              "source": [
+                1920,
+                1080
+              ],
+              "sampled": [
+                512,
+                288
+              ]
+            },
+            "hardGates": {
+              "foregroundContrast": {
+                "value": 21,
+                "pass": true
+              },
+              "accentContrast": {
+                "value": 21,
+                "pass": true
+              },
+              "readableDuration": {
+                "seconds": 6,
+                "pass": true
+              },
+              "motionPresent": {
+                "peak": 0.01914,
+                "activeSamplePairs": 4,
+                "pass": true
+              }
+            },
+            "temporal": {
+              "adjacentFrameDeltas": [
+                0.01178,
+                0.01914,
+                0.00026,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.00182,
+                0.01744
+              ],
+              "meanMotion": 0.00459,
+              "peakMotion": 0.01914,
+              "activeSamplePairs": 4,
+              "variation": 0.00727
+            },
+            "elapsedSeconds": 5.92,
+            "outputDirectory": "/home/saqu/personal/fanne-khan/.cache/evaluator/the-future-stays-curious"
+          },
+          "generation": {
+            "repaired": true,
+            "elapsedSeconds": 15.627113224,
+            "outputTokens": 599,
+            "seed": 20262936,
+            "temperature": 0.45
+          }
+        },
+        "alternatives": [],
+        "elapsedSeconds": 22.1
+      }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-metric-02",
+  "category": "metric",
+  "prompt": "Portrait metric reveal. Exact copy: 6.2H / saved every week. Style direction: electric cyan technical interface.",
+  "createdAt": "2026-09-19T09:07:20.072Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "6.2H / saved every week",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#091219",
+          "foreground": "#f2fbff",
+          "accent": "#35dcff",
+          "muted": "#8196a0"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "metric-reveal",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "metric",
+            "layout": "left",
+            "entrance": "wipe",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "metric",
+                "text": "6.2H",
+                "emphasis": false
+              },
+              {
+                "role": "subtitle",
+                "text": "saved every week",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20292198,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 18,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 11.54,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01147,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "6.2H saved every week",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#090816",
+          "foreground": "#ffffff",
+          "accent": "#b59aff",
+          "muted": "#aaa4c2"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "metric-reveal",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "metric",
+            "layout": "split",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "metric",
+                "text": "6.2H",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "saved every week",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20396927,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 19.85,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 8.54,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01162,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-metric-02/A.mp4",
+    "B": "out/preferences/taste-metric-02/B.mp4"
+  }
+}

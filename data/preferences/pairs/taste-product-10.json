@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-product-10",
+  "category": "product",
+  "prompt": "Landscape product reveal. Exact copy: INDEX / Everything in its place / Search less, make more. Style direction: black and amber with sharp typography.",
+  "createdAt": "2026-09-19T08:58:18.124Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Everything in its place",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ff765f",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "product-reveal",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "product",
+            "layout": "left",
+            "entrance": "stagger",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "INDEX",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Everything in its place",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Search less, make more",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20402981,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 7.41,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01818,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Everything in its place",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#13110f",
+          "foreground": "#fff2ee",
+          "accent": "#ff7600",
+          "muted": "#c69b94"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "product-index",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "product",
+            "layout": "split",
+            "entrance": "rise",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "INDEX",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Everything in its place",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Search less, make more",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20507710,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.21,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 7.04,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01342,
+          "activeSamplePairs": 2,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-product-10/A.mp4",
+    "B": "out/preferences/taste-product-10/B.mp4"
+  }
+}

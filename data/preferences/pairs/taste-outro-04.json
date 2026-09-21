@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-outro-04",
+  "category": "outro",
+  "prompt": "Landscape outro. Exact copy: CURRENT / STAY IN MOTION. Style direction: electric cyan technical interface.",
+  "createdAt": "2026-09-19T10:02:22.970Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "STAY IN MOTION",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#090816",
+          "foreground": "#ffffff",
+          "accent": "#b570f2",
+          "muted": "#aaa4c2"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.04,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "outro-motion",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "outro",
+            "layout": "left",
+            "entrance": "scale",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "title",
+                "text": "CURRENT",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "STAY IN MOTION",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20632619,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 19.85,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.21,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.0165,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Stay in motion",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#091114",
+          "foreground": "#f2fbff",
+          "accent": "#35dcff",
+          "muted": "#8196a0"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "outro-motion",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "outro",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "CURRENT",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "STAY IN MOTION",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20423161,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 18.17,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 11.65,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01093,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-outro-04/A.mp4",
+    "B": "out/preferences/taste-outro-04/B.mp4"
+  }
+}

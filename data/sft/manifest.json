@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-09-18T11:44:04.896Z",
+  "splitStrategy": "content-disjoint within every scene kind",
+  "counts": {
+    "train": 480,
+    "validation": 60,
+    "test": 60
+  },
+  "total": 600,
+  "styles": [
+    "geometric coral",
+    "editorial cobalt",
+    "technical mint",
+    "minimal monochrome",
+    "midnight violet",
+    "warm amber",
+    "electric cyan",
+    "soft lavender",
+    "deep red editorial",
+    "clean blue"
+  ],
+  "kinds": [
+    "title",
+    "quote",
+    "product",
+    "metric",
+    "event",
+    "outro"
+  ]
+}

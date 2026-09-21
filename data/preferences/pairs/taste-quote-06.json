@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-quote-06",
+  "category": "quote",
+  "prompt": "Landscape quote motion design. Exact copy: Leave enough silence / for the idea to land. Style direction: deep red editorial.",
+  "createdAt": "2026-09-19T08:39:13.485Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Leave enough silence for the idea to land",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ff765f",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "quote-silence",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Leave enough silence",
+                "emphasis": true
+              },
+              {
+                "role": "body",
+                "text": "for the idea to land",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20384819,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 7.41,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01216,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Leave enough silence for the idea to land",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ff4228",
+          "muted": "#9298a4"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": 0,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "quote-silence-180",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "quote",
+            "layout": "split",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Leave enough silence",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "for the idea to land",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20594277,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 5.61,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02643,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-quote-06/A.mp4",
+    "B": "out/preferences/taste-quote-06/B.mp4"
+  }
+}

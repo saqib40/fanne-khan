@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-metric-03",
+  "category": "metric",
+  "prompt": "Landscape metric reveal. Exact copy: 410K / new ideas captured. Style direction: geometric coral.",
+  "createdAt": "2026-09-19T09:08:14.667Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "410K new ideas captured",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ff422c",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "orbit",
+          "intensity": 0.45
+        },
+        "segments": [
+          {
+            "id": "metric-410k",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "metric",
+            "layout": "center",
+            "entrance": "wipe",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "metric",
+                "text": "410K",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "new ideas captured",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20503674,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 5.62,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.0125,
+          "activeSamplePairs": 11,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "410K new ideas captured",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ff5c33",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "orbit",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "metric-410k",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "metric",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "metric",
+                "text": "410K",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "new ideas captured",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20294216,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.32,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.0143,
+          "activeSamplePairs": 11,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-metric-03/A.mp4",
+    "B": "out/preferences/taste-metric-03/B.mp4"
+  }
+}

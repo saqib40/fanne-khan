@@ -1,0 +1,166 @@
+{
+  "version": "1.0",
+  "id": "taste-outro-71",
+  "category": "outro",
+  "prompt": "Make a 6-second closing card with exact copy:\nKEEP MAKING.\nKEEP MOVING.\nUse black and vivid orange, strong hierarchy, a satisfying final hold, and no extra call to action.",
+  "createdAt": "2026-09-19T15:40:32.723Z",
+  "comparison": "stage3-sft-vs-dpo",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Keep making, keep moving",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#000000",
+          "foreground": "#ffffff",
+          "accent": "#ffa200",
+          "muted": "#b5b2a7"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.05,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.5
+        },
+        "segments": [
+          {
+            "id": "close",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "outro",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "KEEP MAKING",
+                "emphasis": true
+              },
+              {
+                "role": "eyebrow",
+                "text": "KEEP MOVING",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20271091,
+        "temperature": 0.45,
+        "model": "dpo"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 21,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 10.42,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00834,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Keep making, keep moving",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#000000",
+          "foreground": "#ffffff",
+          "accent": "#ffa200",
+          "muted": "#b5b2a7"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "close",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "outro",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "KEEP MAKING",
+                "emphasis": true
+              },
+              {
+                "role": "eyebrow",
+                "text": "KEEP MOVING",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20271091,
+        "temperature": 0.45,
+        "model": "sft"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 21,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 10.42,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00835,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/comparison/taste-outro-71/A.mp4",
+    "B": "out/comparison/taste-outro-71/B.mp4"
+  }
+}

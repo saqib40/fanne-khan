@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-outro-02",
+  "category": "outro",
+  "prompt": "Square outro. Exact copy: GOOD COMPANY / MADE TOGETHER. Style direction: geometric coral.",
+  "createdAt": "2026-09-19T10:00:39.817Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "GOOD COMPANY / MADE TOGETHER",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ff5c37",
+          "muted": "#9298a7"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "inter",
+          "tracking": -0.04,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "outro-good-company",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "outro",
+            "layout": "split",
+            "entrance": "wipe",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "title",
+                "text": "GOOD COMPANY",
+                "emphasis": true
+              },
+              {
+                "role": "eyebrow",
+                "text": "MADE TOGETHER",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20628583,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.33,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01064,
+          "activeSamplePairs": 2,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "GOOD COMPANY",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#071a15",
+          "foreground": "#ebfff6",
+          "accent": "#61ffda",
+          "muted": "#7ca998"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "orbit",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "outro-good-company",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "outro",
+            "layout": "split",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "title",
+                "text": "GOOD COMPANY",
+                "emphasis": true
+              },
+              {
+                "role": "eyebrow",
+                "text": "MADE TOGETHER",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20314396,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.27,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 14.41,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02977,
+          "activeSamplePairs": 11,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-outro-02/A.mp4",
+    "B": "out/preferences/taste-outro-02/B.mp4"
+  }
+}

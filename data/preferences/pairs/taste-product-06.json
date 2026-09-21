@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-product-06",
+  "category": "product",
+  "prompt": "Portrait product reveal. Exact copy: PRISM / See the work from every angle / Version three. Style direction: soft lavender.",
+  "createdAt": "2026-09-19T08:54:49.070Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "PRISM launch",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#090816",
+          "foreground": "#ffffff",
+          "accent": "#b578ff",
+          "muted": "#aaa4c2"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "prism-launch-product",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "product",
+            "layout": "split",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "PRISM",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "See the work from every angle",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Version three",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20604367,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 19.85,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.71,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01734,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "PRISM launch",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#357a64",
+          "muted": "#6d6a61"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "product-prism",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "product",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "PRISM",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "See the work from every angle",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Version three",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20290180,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 4.26,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01652,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-product-06/A.mp4",
+    "B": "out/preferences/taste-product-06/B.mp4"
+  }
+}

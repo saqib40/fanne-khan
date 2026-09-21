@@ -1,0 +1,176 @@
+{
+  "version": "1.0",
+  "id": "taste-metric-72",
+  "category": "metric",
+  "prompt": "Design a crisp metric card with exact copy:\nWEEKLY ACTIVE TEAMS\n18,400\nUP 27% THIS QUARTER\nUse near-black, white, and amber. Keep motion confident and readable.",
+  "createdAt": "2026-09-19T15:36:49.400Z",
+  "comparison": "stage3-sft-vs-dpo",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "WEEKLY ACTIVE TEAMS",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ffbc00",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "metric-active-teams",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "metric",
+            "layout": "left",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "WEEKLY ACTIVE TEAMS",
+                "emphasis": false
+              },
+              {
+                "role": "metric",
+                "text": "18,400",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "UP 27% THIS QUARTER",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20268064,
+        "temperature": 0.45,
+        "model": "dpo"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 11.52,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.03138,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "WEEKLY ACTIVE TEAMS",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ffbc00",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "metric-active-teams",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "metric",
+            "layout": "left",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "WEEKLY ACTIVE TEAMS",
+                "emphasis": false
+              },
+              {
+                "role": "metric",
+                "text": "18,400",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "UP 27% THIS QUARTER",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20268064,
+        "temperature": 0.45,
+        "model": "sft"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 11.52,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.03138,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/comparison/taste-metric-72/A.mp4",
+    "B": "out/comparison/taste-metric-72/B.mp4"
+  }
+}

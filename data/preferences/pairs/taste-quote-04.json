@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-quote-04",
+  "category": "quote",
+  "prompt": "Square quote motion design. Exact copy: Make the invisible / impossible to ignore. Style direction: electric cyan and technical.",
+  "createdAt": "2026-09-19T08:37:20.168Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Make the invisible impossible to ignore",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#071a14",
+          "foreground": "#ebfff6",
+          "accent": "#61f2ad",
+          "muted": "#7ca998"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "quote-make-invisible",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "quote",
+            "layout": "split",
+            "entrance": "wipe",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Make the invisible",
+                "emphasis": true
+              },
+              {
+                "role": "title",
+                "text": "impossible to ignore",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20380783,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.28,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 12.69,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02857,
+          "activeSamplePairs": 2,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Make the invisible impossible to ignore",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#091114",
+          "foreground": "#f2fbff",
+          "accent": "#35dcff",
+          "muted": "#8196a0"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "quote-makethinvisible",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "stagger",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Make the invisible",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "impossible to ignore",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20485512,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 18.17,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 11.65,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.04597,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-quote-04/A.mp4",
+    "B": "out/preferences/taste-quote-04/B.mp4"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-event-05",
+  "category": "event",
+  "prompt": "Square event promo. Exact copy: MUMBAI · 21 JAN / BETWEEN FRAMES / Film, type, and visual rhythm. Style direction: deep red editorial.",
+  "createdAt": "2026-09-19T09:27:39.145Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Mumbai Film",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#15110c",
+          "foreground": "#fff3e7",
+          "accent": "#ff7620",
+          "muted": "#bda990"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.45
+        },
+        "segments": [
+          {
+            "id": "promo-mumbai",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "event",
+            "layout": "center",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "MUMBAI · 21 JAN",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "BETWEEN FRAMES",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Film, type, and visual rhythm",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20622529,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.21,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 7.04,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02496,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Between Frames",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ff5c39",
+          "muted": "#9298a9"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "segment-1",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "event",
+            "layout": "split",
+            "entrance": "stagger",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "MUMBAI · 21 JAN",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "BETWEEN FRAMES",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Film, type, and visual rhythm",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20517800,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.33,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02506,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-event-05/A.mp4",
+    "B": "out/preferences/taste-event-05/B.mp4"
+  }
+}

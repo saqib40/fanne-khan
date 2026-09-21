@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-product-05",
+  "category": "product",
+  "prompt": "Square product reveal. Exact copy: HEARTH / Bring the team closer / One thoughtful space. Style direction: warm amber editorial.",
+  "createdAt": "2026-09-19T08:54:02.301Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "HEARTH - One thoughtful space",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#140f0c",
+          "foreground": "#fff1ed",
+          "accent": "#ffb900",
+          "muted": "#bda995"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "product-hearth",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "product",
+            "layout": "split",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "HEARTH",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Bring the team closer",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "One thoughtful space",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20288162,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.27,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 11.05,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02695,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "HEARTH product reveal",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#6a4f40",
+          "muted": "#5b5148"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "product-hearth-reveal",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "product",
+            "layout": "left",
+            "entrance": "stagger",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "HEARTH",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Bring the team closer",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "One thoughtful space",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20392891,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.25,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02332,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-product-05/A.mp4",
+    "B": "out/preferences/taste-product-05/B.mp4"
+  }
+}

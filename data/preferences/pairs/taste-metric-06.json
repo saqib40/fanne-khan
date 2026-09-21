@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-metric-06",
+  "category": "metric",
+  "prompt": "Landscape metric reveal. Exact copy: 28M / minutes returned to teams. Style direction: clean blue.",
+  "createdAt": "2026-09-19T09:10:39.724Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "28M minutes returned to teams",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#b12b14",
+          "muted": "#504b43"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "metric-return",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "metric",
+            "layout": "left",
+            "entrance": "wipe",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "metric",
+                "text": "28M",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "minutes returned to teams",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20300270,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 5.44,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01098,
+          "activeSamplePairs": 2,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "28M minutes returned to teams",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#f5f5f2",
+          "foreground": "#111111",
+          "accent": "#125ea5",
+          "muted": "#777771"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "metric-150",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "metric",
+            "layout": "split",
+            "entrance": "scale",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "metric",
+                "text": "28M",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "minutes returned to teams",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20614457,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.29,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.06,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01002,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-metric-06/A.mp4",
+    "B": "out/preferences/taste-metric-06/B.mp4"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-outro-07",
+  "category": "outro",
+  "prompt": "Landscape outro. Exact copy: RED THREAD / FOLLOW WHAT CONNECTS. Style direction: deep red editorial.",
+  "createdAt": "2026-09-19T10:04:44.322Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "RED THREAD",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#210d0d",
+          "foreground": "#fff1ed",
+          "accent": "#ff765f",
+          "muted": "#c69b94"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "outro-red-thread",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "outro",
+            "layout": "left",
+            "entrance": "scale",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "title",
+                "text": "RED THREAD",
+                "emphasis": false
+              },
+              {
+                "role": "eyebrow",
+                "text": "FOLLOW WHAT CONNECTS",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20324486,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 16.89,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 7.1,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01085,
+          "activeSamplePairs": 2,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "RED THREAD",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#210d0c",
+          "foreground": "#fff4f1",
+          "accent": "#ffd400",
+          "muted": "#c69b95"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.5
+        },
+        "segments": [
+          {
+            "id": "outro-red-thread",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "outro",
+            "layout": "split",
+            "entrance": "wipe",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "title",
+                "text": "RED THREAD",
+                "emphasis": true
+              },
+              {
+                "role": "body",
+                "text": "FOLLOW WHAT CONNECTS",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20638673,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.26,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 13.01,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00939,
+          "activeSamplePairs": 2,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-outro-07/A.mp4",
+    "B": "out/preferences/taste-outro-07/B.mp4"
+  }
+}

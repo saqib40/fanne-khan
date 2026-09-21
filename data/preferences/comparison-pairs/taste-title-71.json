@@ -1,0 +1,166 @@
+{
+  "version": "1.0",
+  "id": "taste-title-71",
+  "category": "title",
+  "prompt": "Create a 7-second editorial kinetic title. Exact copy:\nTURN STATIC INTO SIGNAL\nUse warm ivory on deep charcoal with one coral accent, measured motion, and no extra text.",
+  "createdAt": "2026-09-19T15:29:46.654Z",
+  "comparison": "stage3-sft-vs-dpo",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "TURN STATIC INTO SIGNAL",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#111111",
+          "foreground": "#f2f2eb",
+          "accent": "#ff7066",
+          "muted": "#bda9a0"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "title-turn-static",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "title",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "TURN STATIC",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "INTO SIGNAL",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20261001,
+        "temperature": 0.45,
+        "model": "sft"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 16.79,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.98,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00911,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "TURN STATIC INTO SIGNAL",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#10100c",
+          "foreground": "#f2eadf",
+          "accent": "#ffb000",
+          "muted": "#bda999"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "title-turn-static-signal",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "title",
+            "layout": "split",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "TURN STATIC INTO SIGNAL",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "TURN STATIC INTO SIGNAL",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20470459,
+        "temperature": 0.75,
+        "model": "dpo"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.99,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 10.41,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01658,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/comparison/taste-title-71/A.mp4",
+    "B": "out/comparison/taste-title-71/B.mp4"
+  }
+}

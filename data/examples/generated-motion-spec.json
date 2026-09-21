@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "name": "Day 2 generated contract",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 180,
+  "palette": {
+    "background": "#080b12",
+    "foreground": "#f7f8fa",
+    "accent": "#66e3ff",
+    "muted": "#8793a8"
+  },
+  "typography": {
+    "display": "space-grotesk",
+    "body": "inter",
+    "tracking": -0.04,
+    "uppercaseTitles": false
+  },
+  "accent": {
+    "type": "grid",
+    "intensity": 0.35
+  },
+  "segments": [
+    {
+      "id": "local-intelligence",
+      "startFrame": 0,
+      "durationInFrames": 180,
+      "kind": "product",
+      "layout": "left",
+      "entrance": "stagger",
+      "exit": "fade",
+      "lines": [
+        {
+          "role": "eyebrow",
+          "text": "PRIVATE BY DESIGN",
+          "emphasis": false
+        },
+        {
+          "role": "title",
+          "text": "Intelligence stays",
+          "emphasis": false
+        },
+        {
+          "role": "title",
+          "text": "with you.",
+          "emphasis": true
+        },
+        {
+          "role": "subtitle",
+          "text": "Local motion, rendered with intent.",
+          "emphasis": false
+        }
+      ]
+    }
+  ]
+}

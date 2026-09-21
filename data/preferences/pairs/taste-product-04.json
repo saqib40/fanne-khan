@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-product-04",
+  "category": "product",
+  "prompt": "Landscape product reveal. Exact copy: CIRCUIT / Connect every decision / Built for complex work. Style direction: electric cyan technical interface.",
+  "createdAt": "2026-09-19T08:53:07.645Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "CIRCUIT product reveal",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#060c1c",
+          "foreground": "#f6fbff",
+          "accent": "#ff5c34",
+          "muted": "#92a7c9"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "product-circuit",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "product",
+            "layout": "left",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "CIRCUIT",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Connect every decision",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Built for complex work",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20495602,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 18.72,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.34,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.0138,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "CIRCUIT product reveal",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#071a14",
+          "foreground": "#ebfff6",
+          "accent": "#61f2ad",
+          "muted": "#7ca998"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "product-circuit-0",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "product",
+            "layout": "split",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "CIRCUIT",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Connect every decision",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Built for complex work",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20390873,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.28,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 12.69,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01635,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-product-04/A.mp4",
+    "B": "out/preferences/taste-product-04/B.mp4"
+  }
+}

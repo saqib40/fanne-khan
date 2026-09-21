@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-event-08",
+  "category": "event",
+  "prompt": "Square event promo. Exact copy: GURUGRAM · 6 PM / HUMAN SCALE / Technology with room for people. Style direction: minimal monochrome.",
+  "createdAt": "2026-09-19T09:59:50.853Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Gurugram event promo",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#f5f5f2",
+          "foreground": "#111111",
+          "accent": "#d82945",
+          "muted": "#777771"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "event-gurugram",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "event",
+            "layout": "left",
+            "entrance": "wipe",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "GURUGRAM · 6 PM",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "HUMAN SCALE",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Technology with room for people",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20309351,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.29,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 4.45,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02045,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Gurugram event",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#6a3092",
+          "muted": "#6d6a61"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.04,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "boundary-0",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "event",
+            "layout": "split",
+            "entrance": "wipe",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "GURUGRAM · 6 PM",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "HUMAN SCALE",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Technology with room for people",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20623538,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 7.16,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01744,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-event-08/A.mp4",
+    "B": "out/preferences/taste-event-08/B.mp4"
+  }
+}

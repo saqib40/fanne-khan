@@ -1,0 +1,166 @@
+{
+  "version": "1.0",
+  "id": "taste-quote-71",
+  "category": "quote",
+  "prompt": "Animate this quote over 8 seconds while preserving both lines exactly:\nClarity creates momentum.\nMomentum creates change.\nUse quiet editorial typography, dark green and cream, with restrained line-by-line motion.",
+  "createdAt": "2026-09-19T15:30:55.780Z",
+  "comparison": "stage3-sft-vs-dpo",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Clarity creates momentum",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 240,
+        "palette": {
+          "background": "#eee5d5",
+          "foreground": "#201a13",
+          "accent": "#d85f13",
+          "muted": "#70645e"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "quote-clarity-momentum",
+            "startFrame": 0,
+            "durationInFrames": 240,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Clarity creates momentum",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Momentum creates change",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20263019,
+        "temperature": 0.45,
+        "model": "sft"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 13.79,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.02,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 8,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01284,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Clarity creates momentum",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 240,
+        "palette": {
+          "background": "#eee5d5",
+          "foreground": "#201a13",
+          "accent": "#d85f13",
+          "muted": "#70645e"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "quote-clarity-momentum",
+            "startFrame": 0,
+            "durationInFrames": 240,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Clarity creates momentum",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Momentum creates change",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20263019,
+        "temperature": 0.45,
+        "model": "dpo"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 13.79,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.02,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 8,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01284,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/comparison/taste-quote-71/A.mp4",
+    "B": "out/comparison/taste-quote-71/B.mp4"
+  }
+}

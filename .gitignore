@@ -1,0 +1,9 @@
+node_modules/
+out/
+.cache/
+*.log
+__pycache__/
+.venv/
+models/
+training/runs/
+unsloth_compiled_cache/

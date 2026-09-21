@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-product-01",
+  "category": "product",
+  "prompt": "Landscape product reveal. Exact copy: NORTHSTAR / Find the next right move / Planning for thoughtful teams. Style direction: clean blue.",
+  "createdAt": "2026-09-19T08:43:18.586Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "NORTHSTAR launch",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#f0f4fa",
+          "foreground": "#171a21",
+          "accent": "#115e59",
+          "muted": "#626d76"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "product-northstar",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "product",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "NORTHSTAR",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Find the next right move",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Planning for thoughtful teams",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20290180,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.77,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.87,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01965,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "NORTHSTAR product reveal",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f5f7fa",
+          "foreground": "#111517",
+          "accent": "#107c1c",
+          "muted": "#626e76"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "product-northstar",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "product",
+            "layout": "left",
+            "entrance": "stagger",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "NORTHSTAR",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Find the next right move",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Planning for thoughtful teams",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20499638,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.11,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 4.99,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02274,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-product-01/A.mp4",
+    "B": "out/preferences/taste-product-01/B.mp4"
+  }
+}

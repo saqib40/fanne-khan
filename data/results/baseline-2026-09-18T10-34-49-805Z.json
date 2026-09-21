@@ -1,0 +1,408 @@
+{
+  "createdAt": "2026-09-18T10:34:49.804Z",
+  "model": "qwen2.5-coder:7b",
+  "candidateCount": 1,
+  "prompts": 3,
+  "successful": 3,
+  "successRate": 1,
+  "meanLatencySeconds": 19.256666666666668,
+  "results": [
+    {
+      "id": "title-01",
+      "category": "title",
+      "prompt": "Landscape kinetic title: Make ideas move. Dark editorial style with a warm orange accent.",
+      "result": {
+        "prompt": "Landscape kinetic title: Make ideas move. Dark editorial style with a warm orange accent.",
+        "requestedCandidates": 1,
+        "validCandidates": 1,
+        "generationFailures": [],
+        "evaluationFailures": [],
+        "winner": {
+          "spec": {
+            "version": "1.0",
+            "name": "Make Ideas Move",
+            "fps": 30,
+            "width": 1920,
+            "height": 1080,
+            "durationInFrames": 180,
+            "palette": {
+              "background": "#121212",
+              "foreground": "#ffffff",
+              "accent": "#ffa500",
+              "muted": "#666666"
+            },
+            "typography": {
+              "display": "space-grotesk",
+              "body": "inter",
+              "tracking": -0.06,
+              "uppercaseTitles": true
+            },
+            "accent": {
+              "type": "grid",
+              "intensity": 0.5
+            },
+            "segments": [
+              {
+                "id": "title",
+                "startFrame": 0,
+                "durationInFrames": 180,
+                "kind": "title",
+                "layout": "center",
+                "entrance": "rise",
+                "exit": "fade",
+                "lines": [
+                  {
+                    "role": "title",
+                    "text": "MAKE IDEAS MOVE",
+                    "emphasis": true
+                  },
+                  {
+                    "role": "subtitle",
+                    "text": "Dark editorial style with a warm orange accent.",
+                    "emphasis": false
+                  }
+                ]
+              }
+            ]
+          },
+          "score": 95,
+          "reasons": [
+            "passed every render hard gate",
+            "literal prompt coverage 75%",
+            "clear display/supporting hierarchy",
+            "restrained emphasis",
+            "copy fits role-specific length limits",
+            "3D accent remains subordinate"
+          ],
+          "evaluation": {
+            "status": "success",
+            "compositionId": "Generated",
+            "renderer": "angle",
+            "samples": 12,
+            "dimensions": {
+              "source": [
+                1920,
+                1080
+              ],
+              "sampled": [
+                512,
+                288
+              ]
+            },
+            "hardGates": {
+              "foregroundContrast": {
+                "value": 18.73,
+                "pass": true
+              },
+              "accentContrast": {
+                "value": 9.49,
+                "pass": true
+              },
+              "readableDuration": {
+                "seconds": 6,
+                "pass": true
+              },
+              "motionPresent": {
+                "peak": 0.01529,
+                "activeSamplePairs": 4,
+                "pass": true
+              }
+            },
+            "temporal": {
+              "adjacentFrameDeltas": [
+                0.00827,
+                0.01529,
+                0.00091,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.00184,
+                0.01291
+              ],
+              "meanMotion": 0.00357,
+              "peakMotion": 0.01529,
+              "activeSamplePairs": 4,
+              "variation": 0.0055
+            },
+            "elapsedSeconds": 5.74,
+            "outputDirectory": "/home/saqu/personal/fanne-khan/.cache/evaluator/make-ideas-move"
+          },
+          "generation": {
+            "repaired": true,
+            "elapsedSeconds": 16.519712076,
+            "outputTokens": 618,
+            "seed": 20260918,
+            "temperature": 0.45
+          }
+        },
+        "alternatives": [],
+        "elapsedSeconds": 22.82
+      }
+    },
+    {
+      "id": "title-02",
+      "category": "title",
+      "prompt": "Square opening title reading Build for wonder, using optimistic geometric typography and cobalt blue.",
+      "result": {
+        "prompt": "Square opening title reading Build for wonder, using optimistic geometric typography and cobalt blue.",
+        "requestedCandidates": 1,
+        "validCandidates": 1,
+        "generationFailures": [],
+        "evaluationFailures": [],
+        "winner": {
+          "spec": {
+            "version": "1.0",
+            "name": "Build for Wonder",
+            "fps": 30,
+            "width": 1080,
+            "height": 1080,
+            "durationInFrames": 300,
+            "palette": {
+              "background": "#ffffff",
+              "foreground": "#000000",
+              "accent": "#0070ff",
+              "muted": "#e0e0e0"
+            },
+            "typography": {
+              "display": "space-grotesk",
+              "body": "inter",
+              "tracking": -0.05,
+              "uppercaseTitles": true
+            },
+            "accent": {
+              "type": "grid",
+              "intensity": 1
+            },
+            "segments": [
+              {
+                "id": "title",
+                "startFrame": 0,
+                "durationInFrames": 150,
+                "kind": "title",
+                "layout": "center",
+                "entrance": "rise",
+                "exit": "fade",
+                "lines": [
+                  {
+                    "role": "title",
+                    "text": "Build for wonder",
+                    "emphasis": true
+                  }
+                ]
+              }
+            ]
+          },
+          "score": 68.33,
+          "reasons": [
+            "passed every render hard gate",
+            "literal prompt coverage 17%",
+            "restrained emphasis",
+            "copy fits role-specific length limits"
+          ],
+          "evaluation": {
+            "status": "success",
+            "compositionId": "Generated",
+            "renderer": "angle",
+            "samples": 12,
+            "dimensions": {
+              "source": [
+                1080,
+                1080
+              ],
+              "sampled": [
+                288,
+                288
+              ]
+            },
+            "hardGates": {
+              "foregroundContrast": {
+                "value": 21,
+                "pass": true
+              },
+              "accentContrast": {
+                "value": 4.41,
+                "pass": true
+              },
+              "readableDuration": {
+                "seconds": 5,
+                "pass": true
+              },
+              "motionPresent": {
+                "peak": 0.01689,
+                "activeSamplePairs": 4,
+                "pass": true
+              }
+            },
+            "temporal": {
+              "adjacentFrameDeltas": [
+                0.01689,
+                0.0018,
+                0,
+                0,
+                0.00343,
+                0.01481,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "meanMotion": 0.00336,
+              "peakMotion": 0.01689,
+              "activeSamplePairs": 4,
+              "variation": 0.006
+            },
+            "elapsedSeconds": 5.6,
+            "outputDirectory": "/home/saqu/personal/fanne-khan/.cache/evaluator/build-for-wonder"
+          },
+          "generation": {
+            "repaired": true,
+            "elapsedSeconds": 14.501206676999999,
+            "outputTokens": 549,
+            "seed": 20261927,
+            "temperature": 0.45
+          }
+        },
+        "alternatives": [],
+        "elapsedSeconds": 20.67
+      }
+    },
+    {
+      "id": "title-03",
+      "category": "title",
+      "prompt": "Landscape cinematic title: The future stays curious. Minimal black and ivory with restrained motion.",
+      "result": {
+        "prompt": "Landscape cinematic title: The future stays curious. Minimal black and ivory with restrained motion.",
+        "requestedCandidates": 1,
+        "validCandidates": 1,
+        "generationFailures": [],
+        "evaluationFailures": [],
+        "winner": {
+          "spec": {
+            "version": "1.0",
+            "name": "The Future Stays Curious",
+            "fps": 30,
+            "width": 1920,
+            "height": 1080,
+            "durationInFrames": 180,
+            "palette": {
+              "background": "#000000",
+              "foreground": "#ffffff",
+              "accent": "#ffffff",
+              "muted": "#999999"
+            },
+            "typography": {
+              "display": "space-grotesk",
+              "body": "inter",
+              "tracking": 0,
+              "uppercaseTitles": true
+            },
+            "accent": {
+              "type": "none",
+              "intensity": 1
+            },
+            "segments": [
+              {
+                "id": "title",
+                "startFrame": 0,
+                "durationInFrames": 180,
+                "kind": "title",
+                "layout": "center",
+                "entrance": "rise",
+                "exit": "fade",
+                "lines": [
+                  {
+                    "role": "title",
+                    "text": "THE FUTURE STAYS",
+                    "emphasis": true
+                  },
+                  {
+                    "role": "subtitle",
+                    "text": "CURIOUS",
+                    "emphasis": true
+                  }
+                ]
+              }
+            ]
+          },
+          "score": 80.45,
+          "reasons": [
+            "passed every render hard gate",
+            "literal prompt coverage 27%",
+            "clear display/supporting hierarchy",
+            "restrained emphasis",
+            "copy fits role-specific length limits"
+          ],
+          "evaluation": {
+            "status": "success",
+            "compositionId": "Generated",
+            "renderer": "angle",
+            "samples": 12,
+            "dimensions": {
+              "source": [
+                1920,
+                1080
+              ],
+              "sampled": [
+                512,
+                288
+              ]
+            },
+            "hardGates": {
+              "foregroundContrast": {
+                "value": 21,
+                "pass": true
+              },
+              "accentContrast": {
+                "value": 21,
+                "pass": true
+              },
+              "readableDuration": {
+                "seconds": 6,
+                "pass": true
+              },
+              "motionPresent": {
+                "peak": 0.01914,
+                "activeSamplePairs": 4,
+                "pass": true
+              }
+            },
+            "temporal": {
+              "adjacentFrameDeltas": [
+                0.01178,
+                0.01914,
+                0.00026,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.00182,
+                0.01744
+              ],
+              "meanMotion": 0.00459,
+              "peakMotion": 0.01914,
+              "activeSamplePairs": 4,
+              "variation": 0.00727
+            },
+            "elapsedSeconds": 5.22,
+            "outputDirectory": "/home/saqu/personal/fanne-khan/.cache/evaluator/the-future-stays-curious"
+          },
+          "generation": {
+            "repaired": false,
+            "elapsedSeconds": 8.447110857,
+            "outputTokens": 302,
+            "seed": 20262936,
+            "temperature": 0.45
+          }
+        },
+        "alternatives": [],
+        "elapsedSeconds": 14.28
+      }
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "version": "1.0",
+  "id": "taste-product-72",
+  "category": "product",
+  "prompt": "Animate a premium launch card with exact copy:\nARC STUDIO\nShape better stories.\nVersion 2.0\nUse black, soft white, and electric lime with polished but minimal motion.",
+  "createdAt": "2026-09-19T15:34:35.618Z",
+  "comparison": "stage3-sft-vs-dpo",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "ARC STUDIO",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#71d864",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "title-arc-studio",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "product",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "ARC STUDIO",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Shape better stories.",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Version 2.0",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20266046,
+        "temperature": 0.45,
+        "model": "sft"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 10.84,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01295,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "ARC STUDIO",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#71d864",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "launch-card",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "product",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "ARC STUDIO",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Shape better stories.",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Version 2.0",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20266046,
+        "temperature": 0.45,
+        "model": "dpo"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 10.84,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01154,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/comparison/taste-product-72/A.mp4",
+    "B": "out/comparison/taste-product-72/B.mp4"
+  }
+}

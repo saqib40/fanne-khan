@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-event-02",
+  "category": "event",
+  "prompt": "Square event promo. Exact copy: KOLKATA · 14 NOV / PAPER AND PIXELS / A conversation across mediums. Style direction: warm editorial.",
+  "createdAt": "2026-09-19T09:25:13.744Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Paper and pixels",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#701a75",
+          "muted": "#615c54"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "boundary-1",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "event",
+            "layout": "split",
+            "entrance": "stagger",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "KOLKATA · 14 NOV",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "PAPER AND PIXELS",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "A conversation across mediums",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20302288,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 8.38,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02385,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Paper and pixels",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#f5ead6",
+          "foreground": "#171713",
+          "accent": "#d96018",
+          "muted": "#726b60"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "page-event-kolkata",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "event",
+            "layout": "split",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "KOLKATA · 14 NOV",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "A conversation across mediums",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "PAPER AND PIXELS",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20511746,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.08,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.13,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.03367,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-event-02/A.mp4",
+    "B": "out/preferences/taste-event-02/B.mp4"
+  }
+}

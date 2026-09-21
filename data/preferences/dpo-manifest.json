@@ -1,0 +1,32 @@
+{
+  "createdAt": "2026-09-19T10:13:39.257Z",
+  "sourceRecords": 44,
+  "excludedLegacyRecords": 1,
+  "excludedTiesAndRejectBoth": 15,
+  "train": 38,
+  "validation": 6,
+  "validationIds": [
+    "taste-event-10",
+    "taste-metric-10",
+    "taste-outro-10",
+    "taste-product-10",
+    "taste-quote-09",
+    "taste-title-10"
+  ],
+  "trainByCategory": {
+    "title": 9,
+    "quote": 6,
+    "product": 6,
+    "metric": 7,
+    "event": 4,
+    "outro": 6
+  },
+  "validationByCategory": {
+    "title": 1,
+    "quote": 1,
+    "product": 1,
+    "metric": 1,
+    "event": 1,
+    "outro": 1
+  }
+}

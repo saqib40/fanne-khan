@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-quote-08",
+  "category": "quote",
+  "prompt": "Portrait quote motion design. Exact copy: A useful question / outlives a quick answer. Style direction: editorial cobalt.",
+  "createdAt": "2026-09-19T08:40:54.392Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "A useful question",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f5f5f2",
+          "foreground": "#111111",
+          "accent": "#125ea2",
+          "muted": "#777771"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "quote-useful",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "quote",
+            "layout": "split",
+            "entrance": "stagger",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "A useful question",
+                "emphasis": true
+              },
+              {
+                "role": "body",
+                "text": "outlives a quick answer",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20284126,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.29,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.11,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01245,
+          "activeSamplePairs": 9,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "A useful question",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f5f5f2",
+          "foreground": "#111111",
+          "accent": "#267dd2",
+          "muted": "#777771"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "quote-useful",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "wipe",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "title",
+                "text": "A useful question",
+                "emphasis": true
+              },
+              {
+                "role": "body",
+                "text": "outlives a quick answer",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20493584,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.29,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.89,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00714,
+          "activeSamplePairs": 2,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-quote-08/A.mp4",
+    "B": "out/preferences/taste-quote-08/B.mp4"
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "final-title-01",
+    "category": "title",
+    "prompt": "Landscape kinetic title. Exact copy: FIELD NOTES / FROM THE EDGE. Style direction: warm paper, black ink, editorial serif, and a restrained red accent."
+  },
+  {
+    "id": "final-title-02",
+    "category": "title",
+    "prompt": "Portrait kinetic title. Exact copy: MAKE ROOM / FOR THE UNEXPECTED. Style direction: midnight violet, soft lavender, geometric type, and measured motion."
+  },
+  {
+    "id": "final-quote-01",
+    "category": "quote",
+    "prompt": "Square quote animation. Exact copy: Ideas become useful / when they can move. Style direction: quiet cream on forest green with subtle line-by-line timing."
+  },
+  {
+    "id": "final-quote-02",
+    "category": "quote",
+    "prompt": "Landscape quote animation. Exact copy: Patience is part / of the process. Style direction: refined monochrome typography with one amber emphasis."
+  },
+  {
+    "id": "final-product-01",
+    "category": "product",
+    "prompt": "Landscape product reveal. Exact copy: LUMA DESK / A clearer place to think / Shipping March 18. Style direction: deep navy, warm white, cyan detail, and restrained depth."
+  },
+  {
+    "id": "final-product-02",
+    "category": "product",
+    "prompt": "Portrait product launch. Exact copy: TANDEM / Work in the same direction / Version 1.4. Style direction: charcoal, acid lime, clean sans serif type, and crisp staggered motion."
+  },
+  {
+    "id": "final-metric-01",
+    "category": "metric",
+    "prompt": "Square metric reveal. Exact copy: RETURNING CREATORS / 76% / MONTH OVER MONTH. Style direction: make the number dominant using oxblood, blush, and restrained motion."
+  },
+  {
+    "id": "final-metric-02",
+    "category": "metric",
+    "prompt": "Landscape metric reveal. Exact copy: MOMENTS SHIPPED / 1.8M / ACROSS 42 COUNTRIES. Style direction: near-black, white, electric blue, and technical typography."
+  },
+  {
+    "id": "final-event-01",
+    "category": "event",
+    "prompt": "Portrait event announcement. Exact copy: CHENNAI · 12 APR / COMMON GROUND / Museum Theatre · 7 PM. Style direction: terracotta, cream, editorial hierarchy, and calm pacing."
+  },
+  {
+    "id": "final-event-02",
+    "category": "event",
+    "prompt": "Square event announcement. Exact copy: PUNE · 3 MAY / SYSTEMS IN TYPE / Saturday · 11 AM. Style direction: cobalt, white, precise grid energy, and highly readable details."
+  },
+  {
+    "id": "final-outro-01",
+    "category": "outro",
+    "prompt": "Landscape closing card. Exact copy: OPEN ENDED / KEEP ASKING BETTER QUESTIONS. Style direction: black, ivory, orange, confident final hold, and no additional text."
+  },
+  {
+    "id": "final-outro-02",
+    "category": "outro",
+    "prompt": "Portrait closing card. Exact copy: NEXT LIGHT / SEE YOU TOMORROW. Style direction: deep teal, pale mint, gentle exit, and no additional call to action."
+  }
+]

@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-product-02",
+  "category": "product",
+  "prompt": "Square product reveal. Exact copy: KITE / Ideas without the overhead / Available now. Style direction: geometric coral.",
+  "createdAt": "2026-09-19T08:51:26.525Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "KITE launch",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ff5c3a",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "product-kite",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "product",
+            "layout": "split",
+            "entrance": "wipe",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "KITE",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Ideas without the overhead",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Available now",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20596295,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.33,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02069,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "KITE product reveal",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f5eadf",
+          "foreground": "#111111",
+          "accent": "#d82945",
+          "muted": "#777777"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "orbit",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "product-kite",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "product",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "KITE",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Ideas without the overhead",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Available now",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20491566,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.93,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 4.1,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.03202,
+          "activeSamplePairs": 11,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-product-02/A.mp4",
+    "B": "out/preferences/taste-product-02/B.mp4"
+  }
+}

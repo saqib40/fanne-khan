@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-event-04",
+  "category": "event",
+  "prompt": "Portrait event promo. Exact copy: ONLINE · 7 PM IST / SMALL SYSTEMS / Tools for independent studios. Style direction: technical mint.",
+  "createdAt": "2026-09-19T09:26:45.088Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Small systems",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#071a14",
+          "foreground": "#ebfff6",
+          "accent": "#61f2ad",
+          "muted": "#7ca998"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "boundary-3",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "event",
+            "layout": "left",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "ONLINE · 7 PM IST",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "SMALL SYSTEMS",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Tools for independent studios",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20515782,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.28,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 12.69,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01106,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Small systems tools",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#091114",
+          "foreground": "#f2fbff",
+          "accent": "#35dcff",
+          "muted": "#8196a0"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": 0,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "boundary-1",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "event",
+            "layout": "split",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "ONLINE · 7 PM IST",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "SMALL SYSTEMS",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Tools for independent studios",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20620511,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 18.17,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 11.65,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01439,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-event-04/A.mp4",
+    "B": "out/preferences/taste-event-04/B.mp4"
+  }
+}

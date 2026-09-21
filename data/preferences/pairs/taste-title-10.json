@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-title-10",
+  "category": "title",
+  "prompt": "Landscape title motion design. Exact copy: KEEP THE EDGE / Lose the clutter. Style direction: technical mint with controlled energy.",
+  "createdAt": "2026-09-19T08:23:49.169Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "KEEP THE EDGE",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#d9572c",
+          "muted": "#6d6a61"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "segment-1",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "title",
+            "layout": "split",
+            "entrance": "scale",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "KEEP THE EDGE",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Lose the clutter",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20592259,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.28,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00629,
+          "activeSamplePairs": 2,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "KEEP THE EDGE",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#b12704",
+          "muted": "#504b43"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "title-edge",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "title",
+            "layout": "left",
+            "entrance": "stagger",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "KEEP THE EDGE",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Lose the clutter",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20278072,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 5.55,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01067,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-title-10/A.mp4",
+    "B": "out/preferences/taste-title-10/B.mp4"
+  }
+}

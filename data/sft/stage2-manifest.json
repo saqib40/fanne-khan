@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-09-18T12:39:29.572Z",
+  "correctionTrain": 120,
+  "correctionValidation": 30,
+  "canonicalReplayTrain": 120,
+  "canonicalReplayValidation": 30,
+  "stageTwoTrain": 240,
+  "stageTwoValidation": 60,
+  "stageThreeTrain": 80,
+  "stageThreeValidation": 20,
+  "correctionClasses": {
+    "contrast": 40,
+    "metric-role": 40,
+    "line-boundary": 40
+  }
+}

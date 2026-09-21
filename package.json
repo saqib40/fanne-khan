@@ -1,0 +1,61 @@
+{
+  "name": "fanne-khan",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local AI kinetic-typography and motion-design generator",
+  "scripts": {
+    "studio": "LD_LIBRARY_PATH=.cache/system-libs/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH remotion studio frontend/src/index.ts",
+    "render:demo": "LD_LIBRARY_PATH=.cache/system-libs/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH remotion render frontend/src/index.ts ProductLaunch out/product-launch.mp4 --gl=angle",
+    "evaluate": "tsx evaluator/src/evaluate.ts",
+    "api": "tsx backend/src/server.ts",
+    "demo": "bash scripts/start-demo.sh",
+    "demo:backup": "tsx backend/src/render-demo-backup.ts",
+    "inference:serve": "uv run python training/inference_server.py",
+    "generate": "tsx backend/src/cli.ts",
+    "generate:base": "MODEL_BACKEND=ollama tsx backend/src/cli.ts",
+    "benchmark": "tsx backend/src/benchmark.ts",
+    "benchmark:final": "tsx backend/src/final-benchmark.ts",
+    "data:sft": "tsx training/generate_sft_data.ts",
+    "data:corrections": "tsx training/generate_correction_data.ts",
+    "data:validate": "tsx training/validate_sft_data.ts",
+    "data:validate-corrections": "tsx training/validate_correction_data.ts",
+    "taste:generate": "tsx training/generate_taste_pairs.ts",
+    "taste:review": "tsx backend/src/taste-server.ts",
+    "data:dpo": "tsx training/prepare_dpo_data.ts",
+    "compare:generate": "tsx training/generate_adapter_comparison.ts",
+    "compare:review": "TASTE_PAIR_DIRECTORY=data/preferences/comparison-pairs TASTE_VIDEO_ROOT=out/comparison TASTE_REVIEWS_PATH=data/preferences/comparison-reviews.jsonl TASTE_HUMAN_PATH=data/preferences/comparison-human.jsonl PORT=8791 tsx backend/src/taste-server.ts",
+    "compare:results": "tsx training/summarize_adapter_comparison.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "5.2.8",
+    "@fontsource-variable/fraunces": "5.3.0",
+    "@fontsource-variable/jetbrains-mono": "5.2.8",
+    "@fontsource-variable/space-grotesk": "5.2.10",
+    "@react-three/fiber": "9.4.0",
+    "@remotion/bundler": "4.0.526",
+    "@remotion/cli": "4.0.526",
+    "@remotion/renderer": "4.0.526",
+    "@remotion/three": "4.0.526",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.526",
+    "sharp": "0.35.4",
+    "three": "0.182.0",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.13",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@types/three": "0.182.0",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-event-09",
+  "category": "event",
+  "prompt": "Landscape event promo. Exact copy: VARANASI · 5 AM / RIVER LIGHT / A dawn photography walk. Style direction: black and amber.",
+  "createdAt": "2026-09-19T09:29:12.903Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "VARANASI · 5 AM / RIVER LIGHT",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#20120a",
+          "foreground": "#fff1ed",
+          "accent": "#ff7616",
+          "muted": "#c69b94"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.05,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "orbit",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "title-event-varanasi",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "event",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "VARANASI · 5 AM",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "RIVER LIGHT",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "A dawn photography walk",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20525872,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 16.54,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.82,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01562,
+          "activeSamplePairs": 11,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "River light",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#0b0803",
+          "foreground": "#f2ead1",
+          "accent": "#ffb600",
+          "muted": "#bda98d"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "event-promo",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "event",
+            "layout": "split",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "VARANASI · 5 AM",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "RIVER LIGHT",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "A dawn photography walk",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20421143,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 16.63,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 11.37,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01067,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-event-09/A.mp4",
+    "B": "out/preferences/taste-event-09/B.mp4"
+  }
+}

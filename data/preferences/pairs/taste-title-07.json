@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-title-07",
+  "category": "title",
+  "prompt": "Landscape title motion design. Exact copy: STAY CURIOUS / Certainty can wait. Style direction: deep red editorial with cinematic restraint.",
+  "createdAt": "2026-09-19T08:21:17.652Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Stay curious",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#090910",
+          "foreground": "#ffffff",
+          "accent": "#b578ff",
+          "muted": "#aaa4c2"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.04,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "title-stay-curious",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "title",
+            "layout": "left",
+            "entrance": "wipe",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "STAY CURIOUS",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Certainty can wait",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20586205,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 19.85,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.71,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.0093,
+          "activeSamplePairs": 2,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "STAY CURIOUS",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ff765f",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "title-stay-curious",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "title",
+            "layout": "left",
+            "entrance": "stagger",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "STAY CURIOUS",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Certainty can wait",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20481476,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 7.41,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01207,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-title-07/A.mp4",
+    "B": "out/preferences/taste-title-07/B.mp4"
+  }
+}

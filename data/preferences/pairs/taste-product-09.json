@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-product-09",
+  "category": "product",
+  "prompt": "Portrait product reveal. Exact copy: PULSE / Know what needs attention / In real time. Style direction: technical mint.",
+  "createdAt": "2026-09-19T08:57:26.482Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Pulse product reveal",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#071a14",
+          "foreground": "#ebfff6",
+          "accent": "#61f2ad",
+          "muted": "#7ca998"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "product-pulse",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "product",
+            "layout": "split",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "PULSE",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Know what needs attention",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "In real time",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20296234,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.28,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 12.69,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01788,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Pulse product reveal",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#071a14",
+          "foreground": "#ebfff6",
+          "accent": "#61f2ad",
+          "muted": "#7ca998"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "product-pulse",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "product",
+            "layout": "left",
+            "entrance": "wipe",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "PULSE",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Know what needs attention",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "In real time",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20400963,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.28,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 12.69,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01796,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-product-09/A.mp4",
+    "B": "out/preferences/taste-product-09/B.mp4"
+  }
+}

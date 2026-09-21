@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-quote-03",
+  "category": "quote",
+  "prompt": "Landscape quote motion design. Exact copy: Clarity is not empty / it is intentional. Style direction: minimal monochrome.",
+  "createdAt": "2026-09-19T08:36:24.194Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Clarity is intentional",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#f5f5f2",
+          "foreground": "#111111",
+          "accent": "#d0272f",
+          "muted": "#777771"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "quote-clarity",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "fade",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Clarity is not empty",
+                "emphasis": true
+              },
+              {
+                "role": "title",
+                "text": "it is intentional",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20483494,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.29,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 4.79,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01673,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Clarity is intentional",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#e0420f",
+          "muted": "#6a6860"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "quote-clarity",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Clarity is not empty",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "it is intentional",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20378765,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.54,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02354,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-quote-03/A.mp4",
+    "B": "out/preferences/taste-quote-03/B.mp4"
+  }
+}

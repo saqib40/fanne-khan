@@ -1,0 +1,176 @@
+{
+  "version": "1.0",
+  "id": "taste-event-72",
+  "category": "event",
+  "prompt": "Animate an editorial conference card. Exact copy:\nTYPE / TIME\nFriday, 6:30 PM\nThe Foundry, Berlin\nUse burgundy, cream, and elegant serif-led typography.",
+  "createdAt": "2026-09-19T15:39:04.647Z",
+  "comparison": "stage3-sft-vs-dpo",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Editorial conference card",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#eeeafb",
+          "foreground": "#201a33",
+          "accent": "#d82945",
+          "muted": "#726b85"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "card-conference",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "event",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "TYPE / TIME",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Friday, 6:30 PM",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "The Foundry, Berlin",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20270082,
+        "temperature": 0.45,
+        "model": "dpo"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 14.16,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 4.12,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01181,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Editorial conference card",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#eeeafb",
+          "foreground": "#201a33",
+          "accent": "#d82945",
+          "muted": "#726b85"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "card-conference",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "event",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "TYPE / TIME",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Friday, 6:30 PM",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "The Foundry, Berlin",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20270082,
+        "temperature": 0.45,
+        "model": "sft"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 14.16,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 4.12,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01181,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/comparison/taste-event-72/A.mp4",
+    "B": "out/comparison/taste-event-72/B.mp4"
+  }
+}

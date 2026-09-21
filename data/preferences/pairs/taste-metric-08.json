@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-metric-08",
+  "category": "metric",
+  "prompt": "Portrait metric reveal. Exact copy: 72K / projects moved forward. Style direction: warm amber on black.",
+  "createdAt": "2026-09-19T09:12:14.292Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Projects moved forward",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#09080c",
+          "foreground": "#f2eadf",
+          "accent": "#ffb200",
+          "muted": "#968995"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "orbit",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "metric-projects",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "metric",
+            "layout": "split",
+            "entrance": "rise",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "metric",
+                "text": "72K",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "projects moved forward",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20409035,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 16.75,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 11.05,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01516,
+          "activeSamplePairs": 10,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "72K projects moved forward",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#06090f",
+          "foreground": "#ebfff6",
+          "accent": "#f4a060",
+          "muted": "#717d8a"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.05,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "metric-reveal",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "metric",
+            "layout": "left",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "metric",
+                "text": "72K",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "projects moved forward",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20618493,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 19.14,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 9.53,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01202,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-metric-08/A.mp4",
+    "B": "out/preferences/taste-metric-08/B.mp4"
+  }
+}

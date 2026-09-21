@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-title-03",
+  "category": "title",
+  "prompt": "Portrait title motion design. Exact copy: BEGIN BEFORE / YOU FEEL READY. Style direction: warm editorial with elegant pacing.",
+  "createdAt": "2026-09-19T08:17:35.102Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "BEGIN BEFORE",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#6a2aff",
+          "muted": "#605e56"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "boundary-0",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "title",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "BEGIN BEFORE",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "YOU FEEL READY",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20473404,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 5.18,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.0098,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "BEGIN BEFORE / YOU FEEL READY",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#e0420f",
+          "muted": "#6a675b"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "boundary-1",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "title",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "BEGIN BEFORE",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "YOU FEEL READY",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20263946,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.54,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01003,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-title-03/A.mp4",
+    "B": "out/preferences/taste-title-03/B.mp4"
+  }
+}

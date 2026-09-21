@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-title-05",
+  "category": "title",
+  "prompt": "Square title motion design. Exact copy: FIND THE THREAD / Follow it forward. Style direction: soft lavender and quietly optimistic.",
+  "createdAt": "2026-09-19T08:19:24.013Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "FIND THE THREAD",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#f3eadf",
+          "foreground": "#201a1c",
+          "accent": "#6846c7",
+          "muted": "#756b79"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "orbit",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "title-find-the-thread",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "title",
+            "layout": "center",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "FIND THE THREAD",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Follow it forward",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20477440,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 14.39,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 5.36,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02444,
+          "activeSamplePairs": 11,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "FIND THE THREAD",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#f2f8ff",
+          "foreground": "#101b2e",
+          "accent": "#174ea6",
+          "muted": "#62708a"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "title-find-the-thread",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "title",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "FIND THE THREAD",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Follow it forward",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20267982,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 16.13,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 7.34,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01814,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-title-05/A.mp4",
+    "B": "out/preferences/taste-title-05/B.mp4"
+  }
+}

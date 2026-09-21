@@ -1,0 +1,62 @@
+[
+  {
+    "id": "taste-title-71",
+    "category": "title",
+    "prompt": "Create a 7-second editorial kinetic title. Exact copy:\nTURN STATIC INTO SIGNAL\nUse warm ivory on deep charcoal with one coral accent, measured motion, and no extra text."
+  },
+  {
+    "id": "taste-title-72",
+    "category": "title",
+    "prompt": "Design a bold 6-second title card. Exact copy:\nSMALL STEPS. BIG MOMENTUM.\nUse geometric type, a cobalt background, crisp staggered reveals, and no additional words."
+  },
+  {
+    "id": "taste-quote-71",
+    "category": "quote",
+    "prompt": "Animate this quote over 8 seconds while preserving both lines exactly:\nClarity creates momentum.\nMomentum creates change.\nUse quiet editorial typography, dark green and cream, with restrained line-by-line motion."
+  },
+  {
+    "id": "taste-quote-72",
+    "category": "quote",
+    "prompt": "Make a refined kinetic quote with exact copy:\nDesign is intelligence made visible.\n— Alina Wheeler\nUse a warm paper background, black type, red accent, and subtle typographic motion."
+  },
+  {
+    "id": "taste-product-71",
+    "category": "product",
+    "prompt": "Create a 7-second product announcement. Exact copy:\nNORTHSTAR NOTES\nIdeas, finally in focus.\nAvailable October 12\nUse midnight blue, icy cyan, clean sans serif type, and restrained depth."
+  },
+  {
+    "id": "taste-product-72",
+    "category": "product",
+    "prompt": "Animate a premium launch card with exact copy:\nARC STUDIO\nShape better stories.\nVersion 2.0\nUse black, soft white, and electric lime with polished but minimal motion."
+  },
+  {
+    "id": "taste-metric-71",
+    "category": "metric",
+    "prompt": "Create an 8-second metric reveal with these exact lines:\nFASTER ITERATION\n63%\nLESS REVIEW TIME\nMake the number dominant. Use deep plum, pale pink, and a restrained orbit accent."
+  },
+  {
+    "id": "taste-metric-72",
+    "category": "metric",
+    "prompt": "Design a crisp metric card with exact copy:\nWEEKLY ACTIVE TEAMS\n18,400\nUP 27% THIS QUARTER\nUse near-black, white, and amber. Keep motion confident and readable."
+  },
+  {
+    "id": "taste-event-71",
+    "category": "event",
+    "prompt": "Create a kinetic event announcement with exact copy:\nMOTION NORTH\nNovember 8–9\nHelsinki\nUse cold blue and white, architectural type, and a subtle grid-like rhythm."
+  },
+  {
+    "id": "taste-event-72",
+    "category": "event",
+    "prompt": "Animate an editorial conference card. Exact copy:\nTYPE / TIME\nFriday, 6:30 PM\nThe Foundry, Berlin\nUse burgundy, cream, and elegant serif-led typography."
+  },
+  {
+    "id": "taste-outro-71",
+    "category": "outro",
+    "prompt": "Make a 6-second closing card with exact copy:\nKEEP MAKING.\nKEEP MOVING.\nUse black and vivid orange, strong hierarchy, a satisfying final hold, and no extra call to action."
+  },
+  {
+    "id": "taste-outro-72",
+    "category": "outro",
+    "prompt": "Create a calm final card with exact copy:\nSEE YOU IN THE NEXT FRAME.\nUse midnight violet, soft lavender type, a gentle exit, and no additional text."
+  }
+]

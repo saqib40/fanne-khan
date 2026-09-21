@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-outro-06",
+  "category": "outro",
+  "prompt": "Portrait outro. Exact copy: PLAIN SIGHT / LOOK CLOSER. Style direction: minimal monochrome.",
+  "createdAt": "2026-09-19T10:03:46.932Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "PLAIN SIGHT",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#e04e34",
+          "muted": "#6d6a61"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "outro-plain-sight",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "outro",
+            "layout": "split",
+            "entrance": "stagger",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "PLAIN SIGHT",
+                "emphasis": true
+              },
+              {
+                "role": "eyebrow",
+                "text": "LOOK CLOSER",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20531926,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.3,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00662,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "PLAIN SIGHT",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#111111",
+          "accent": "#0265e1",
+          "muted": "#777777"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.05,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "outro-plain-sight",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "outro",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "PLAIN SIGHT",
+                "emphasis": true
+              },
+              {
+                "role": "eyebrow",
+                "text": "LOOK CLOSER",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20322468,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.77,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 4.44,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00711,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-outro-06/A.mp4",
+    "B": "out/preferences/taste-outro-06/B.mp4"
+  }
+}

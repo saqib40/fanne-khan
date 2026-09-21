@@ -1,0 +1,176 @@
+{
+  "version": "1.0",
+  "id": "taste-metric-71",
+  "category": "metric",
+  "prompt": "Create an 8-second metric reveal with these exact lines:\nFASTER ITERATION\n63%\nLESS REVIEW TIME\nMake the number dominant. Use deep plum, pale pink, and a restrained orbit accent.",
+  "createdAt": "2026-09-19T15:35:28.932Z",
+  "comparison": "stage3-sft-vs-dpo",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "FASTER ITERATION",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 240,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171310",
+          "accent": "#240873",
+          "muted": "#574e4a"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "orbit",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "metric-iteration",
+            "startFrame": 0,
+            "durationInFrames": 240,
+            "kind": "metric",
+            "layout": "left",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "FASTER ITERATION",
+                "emphasis": false
+              },
+              {
+                "role": "metric",
+                "text": "63%",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "LESS REVIEW TIME",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20581242,
+        "temperature": 0.9,
+        "model": "sft"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.43,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 12.92,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 8,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01732,
+          "activeSamplePairs": 11,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "FASTER ITERATION",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 240,
+        "palette": {
+          "background": "#eeeafb",
+          "foreground": "#17171f",
+          "accent": "#2b0081",
+          "muted": "#727ca1"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.05,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "orbit",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "metric-iteration",
+            "startFrame": 0,
+            "durationInFrames": 240,
+            "kind": "metric",
+            "layout": "left",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "FASTER ITERATION",
+                "emphasis": false
+              },
+              {
+                "role": "metric",
+                "text": "63%",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "LESS REVIEW TIME",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20371784,
+        "temperature": 0.6,
+        "model": "dpo"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.1,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 12.54,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 8,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02962,
+          "activeSamplePairs": 11,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/comparison/taste-metric-71/A.mp4",
+    "B": "out/comparison/taste-metric-71/B.mp4"
+  }
+}

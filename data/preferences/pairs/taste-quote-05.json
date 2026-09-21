@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-quote-05",
+  "category": "quote",
+  "prompt": "Portrait quote motion design. Exact copy: Momentum follows / a meaningful first step. Style direction: geometric coral.",
+  "createdAt": "2026-09-19T08:38:14.118Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Momentum follows a meaningful first step",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#13131a",
+          "foreground": "#ffffff",
+          "accent": "#ff5c32",
+          "muted": "#aaaaaa"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "orbit",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "quote-momentum",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "wipe",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Momentum follows",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "a meaningful first step",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20592259,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 18.49,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.01,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02554,
+          "activeSamplePairs": 9,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Momentum follows",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ff5c36",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.05,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "orbit",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "quote-momentum",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Momentum follows",
+                "emphasis": true
+              },
+              {
+                "role": "body",
+                "text": "a meaningful first step",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20382801,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.33,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01251,
+          "activeSamplePairs": 10,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-quote-05/A.mp4",
+    "B": "out/preferences/taste-quote-05/B.mp4"
+  }
+}

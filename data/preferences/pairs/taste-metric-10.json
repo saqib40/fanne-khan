@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-metric-10",
+  "category": "metric",
+  "prompt": "Square metric reveal. Exact copy: 156 / cities creating together. Style direction: restrained editorial cobalt.",
+  "createdAt": "2026-09-19T09:14:03.259Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "156 / cities creating together",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#f5f5f2",
+          "foreground": "#111111",
+          "accent": "#395eff",
+          "muted": "#777771"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.05,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "metric-reveal",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "metric",
+            "layout": "split",
+            "entrance": "wipe",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "metric",
+                "text": "156",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "cities creating together",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20413071,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.29,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 4.56,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01414,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "156 / cities creating together",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f5f5f2",
+          "foreground": "#111111",
+          "accent": "#125ea8",
+          "muted": "#777771"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "metric-156",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "metric",
+            "layout": "split",
+            "entrance": "wipe",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "metric",
+                "text": "156",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "cities creating together",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20308342,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.29,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.02,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01513,
+          "activeSamplePairs": 10,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-metric-10/A.mp4",
+    "B": "out/preferences/taste-metric-10/B.mp4"
+  }
+}

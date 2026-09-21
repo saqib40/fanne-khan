@@ -1,0 +1,51 @@
+{
+  "generated": 11,
+  "reviewed": 11,
+  "remaining": 0,
+  "outcome": {
+    "sft": 2,
+    "dpo": 4,
+    "tie": 4,
+    "rejectBoth": 1
+  },
+  "dpoWinRate": 0.667,
+  "byCategory": {
+    "event": {
+      "sft": 1,
+      "dpo": 1,
+      "tie": 0,
+      "rejectBoth": 0
+    },
+    "metric": {
+      "sft": 0,
+      "dpo": 1,
+      "tie": 1,
+      "rejectBoth": 0
+    },
+    "outro": {
+      "sft": 0,
+      "dpo": 1,
+      "tie": 1,
+      "rejectBoth": 0
+    },
+    "product": {
+      "sft": 0,
+      "dpo": 1,
+      "tie": 1,
+      "rejectBoth": 0
+    },
+    "quote": {
+      "sft": 1,
+      "dpo": 0,
+      "tie": 1,
+      "rejectBoth": 0
+    },
+    "title": {
+      "sft": 0,
+      "dpo": 0,
+      "tie": 0,
+      "rejectBoth": 1
+    }
+  },
+  "recommendation": "Integrate the DPO adapter, while retaining correctness gates."
+}

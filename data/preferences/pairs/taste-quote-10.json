@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-quote-10",
+  "category": "quote",
+  "prompt": "Square quote motion design. Exact copy: Progress can be quiet / and still be real. Style direction: technical mint with gentle motion.",
+  "createdAt": "2026-09-19T08:42:31.231Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Progress can be quiet",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#d9524e",
+          "muted": "#6d6a61"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.05,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "quote-progress",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "quote",
+            "layout": "split",
+            "entrance": "scale",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Progress can be quiet",
+                "emphasis": true
+              },
+              {
+                "role": "title",
+                "text": "and still be real",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20392891,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.33,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.03052,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Progress can be quiet and still be real",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#d9514c",
+          "muted": "#5b554e"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "particles",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "quote-progress",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "quote",
+            "layout": "split",
+            "entrance": "stagger",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Progress can be quiet",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "and still be real",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20288162,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.35,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.03532,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-quote-10/A.mp4",
+    "B": "out/preferences/taste-quote-10/B.mp4"
+  }
+}

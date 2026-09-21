@@ -1,0 +1,161 @@
+{
+  "version": "1.0",
+  "id": "taste-outro-72",
+  "category": "outro",
+  "prompt": "Create a calm final card with exact copy:\nSEE YOU IN THE NEXT FRAME.\nUse midnight violet, soft lavender type, a gentle exit, and no additional text.",
+  "createdAt": "2026-09-19T15:41:51.729Z",
+  "comparison": "stage3-sft-vs-dpo",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "see you in the next frame",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#0b061c",
+          "foreground": "#ffffff",
+          "accent": "#9a6ee7",
+          "muted": "#aaa4c2"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "jetbrains-mono",
+          "tracking": -0.04,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "title-see-you-in-the-next-frame",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "outro",
+            "layout": "left",
+            "entrance": "wipe",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "title",
+                "text": "SEE YOU",
+                "emphasis": true
+              },
+              {
+                "role": "eyebrow",
+                "text": "IN THE NEXT FRAME",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20586287,
+        "temperature": 0.9,
+        "model": "sft"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 19.87,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 5.45,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00523,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Final card",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#090816",
+          "foreground": "#ebddff",
+          "accent": "#9a76ff",
+          "muted": "#9282b6"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.05,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "card-final",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "outro",
+            "layout": "left",
+            "entrance": "stagger",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "title",
+                "text": "SEE YOU IN THE NEXT FRAME",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20272100,
+        "temperature": 0.45,
+        "model": "dpo"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.43,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.06,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01641,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/comparison/taste-outro-72/A.mp4",
+    "B": "out/comparison/taste-outro-72/B.mp4"
+  }
+}

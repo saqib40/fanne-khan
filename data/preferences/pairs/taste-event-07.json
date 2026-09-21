@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-event-07",
+  "category": "event",
+  "prompt": "Portrait event promo. Exact copy: KOZHIKODE · 18 FEB / OTHER FUTURES / Stories from emerging makers. Style direction: soft lavender.",
+  "createdAt": "2026-09-19T09:28:19.107Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Other Futures",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#357aed",
+          "muted": "#6d6961"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.04,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "title-other-futures",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "event",
+            "layout": "left",
+            "entrance": "wipe",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "KOZHIKODE · 18 FEB",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "OTHER FUTURES",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Stories from emerging makers",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20521836,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.4,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00695,
+          "activeSamplePairs": 2,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Other Futures",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f5f5ff",
+          "foreground": "#111111",
+          "accent": "#b15bff",
+          "muted": "#777777"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "event-promo",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "event",
+            "layout": "split",
+            "entrance": "wipe",
+            "exit": "cut",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "KOZHIKODE · 18 FEB",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "OTHER FUTURES",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Stories from emerging makers",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20312378,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.43,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.34,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.0063,
+          "activeSamplePairs": 7,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-event-07/A.mp4",
+    "B": "out/preferences/taste-event-07/B.mp4"
+  }
+}

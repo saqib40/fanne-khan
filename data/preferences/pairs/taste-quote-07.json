@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-quote-07",
+  "category": "quote",
+  "prompt": "Square quote motion design. Exact copy: What you remove / reveals what matters. Style direction: clean blue and restrained.",
+  "createdAt": "2026-09-19T08:39:59.938Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "What you remove reveals what matters",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#f0f8ff",
+          "foreground": "#171c24",
+          "accent": "#135cbe",
+          "muted": "#626e75"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "quote-what-you-remove",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "quote",
+            "layout": "split",
+            "entrance": "stagger",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "What you remove",
+                "emphasis": true
+              },
+              {
+                "role": "body",
+                "text": "reveals what matters",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20491566,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.94,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 5.93,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02433,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "What you remove reveals what matters",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#d04a13",
+          "muted": "#6d6a61"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "quote-what-you-remove",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "quote",
+            "layout": "split",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "title",
+                "text": "What you remove",
+                "emphasis": true
+              },
+              {
+                "role": "body",
+                "text": "reveals what matters",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20386837,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.76,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.0145,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-quote-07/A.mp4",
+    "B": "out/preferences/taste-quote-07/B.mp4"
+  }
+}

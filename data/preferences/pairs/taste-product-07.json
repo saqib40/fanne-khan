@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-product-07",
+  "category": "product",
+  "prompt": "Landscape product reveal. Exact copy: FORGE / Turn rough ideas into real work / Made for makers. Style direction: deep red editorial.",
+  "createdAt": "2026-09-19T08:55:43.092Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "FORGE",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#0b0d12",
+          "foreground": "#f6f4ef",
+          "accent": "#ff5c32",
+          "muted": "#9298a6"
+        },
+        "typography": {
+          "display": "jetbrains-mono",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.35
+        },
+        "segments": [
+          {
+            "id": "product-forge",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "product",
+            "layout": "left",
+            "entrance": "scale",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "Made for makers",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "FORGE",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Turn rough ideas into real work",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20396927,
+        "temperature": 0.6
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.68,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 6.32,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.00611,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "FORGE - Turn rough ideas into real work",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#130711",
+          "foreground": "#fff0ef",
+          "accent": "#ff7674",
+          "muted": "#c1979e"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.05,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "product-forge-rough-ideas",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "product",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "FORGE",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "Turn rough ideas into real work",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "Made for makers",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20606385,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.79,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 7.59,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02074,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-product-07/A.mp4",
+    "B": "out/preferences/taste-product-07/B.mp4"
+  }
+}

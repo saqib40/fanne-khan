@@ -1,0 +1,11 @@
+{"pairId":"taste-event-71","choice":"B","strength":"clear","reasons":["typography","color"],"note":"","createdAt":"2026-09-20T06:15:03.358Z"}
+{"pairId":"taste-event-72","choice":"B","strength":"clear","reasons":["motion","typography","color"],"note":"","createdAt":"2026-09-20T06:15:17.950Z"}
+{"pairId":"taste-metric-71","choice":"B","strength":"clear","reasons":["layout","typography","color"],"note":"","createdAt":"2026-09-20T06:15:33.573Z"}
+{"pairId":"taste-metric-72","choice":"tie","strength":"clear","reasons":[],"note":"","createdAt":"2026-09-20T06:15:44.669Z"}
+{"pairId":"taste-outro-71","choice":"tie","strength":"clear","reasons":[],"note":"","createdAt":"2026-09-20T06:15:53.385Z"}
+{"pairId":"taste-outro-72","choice":"B","strength":"clear","reasons":["layout","typography","color"],"note":"","createdAt":"2026-09-20T06:16:03.198Z"}
+{"pairId":"taste-product-71","choice":"tie","strength":"clear","reasons":["motion","typography","color"],"note":"","createdAt":"2026-09-20T06:16:14.752Z"}
+{"pairId":"taste-product-72","choice":"B","strength":"clear","reasons":["layout"],"note":"","createdAt":"2026-09-20T06:16:20.299Z"}
+{"pairId":"taste-quote-71","choice":"tie","strength":"clear","reasons":["typography","color"],"note":"","createdAt":"2026-09-20T06:16:28.567Z"}
+{"pairId":"taste-quote-72","choice":"B","strength":"clear","reasons":["typography"],"note":"","createdAt":"2026-09-20T06:16:34.421Z"}
+{"pairId":"taste-title-71","choice":"reject-both","strength":"clear","reasons":["motion","layout"],"note":"","createdAt":"2026-09-20T06:16:52.192Z"}

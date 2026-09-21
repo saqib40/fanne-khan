@@ -1,0 +1,50 @@
+[
+  {"id":"title-01","category":"title","prompt":"Landscape kinetic title: Make ideas move. Dark editorial style with a warm orange accent."},
+  {"id":"title-02","category":"title","prompt":"Square opening title reading Build for wonder, using optimistic geometric typography and cobalt blue."},
+  {"id":"title-03","category":"title","prompt":"Landscape cinematic title: The future stays curious. Minimal black and ivory with restrained motion."},
+  {"id":"title-04","category":"title","prompt":"Portrait social title reading Start small. Move fast. Use energetic lime type on deep navy."},
+  {"id":"title-05","category":"title","prompt":"Landscape brutalist title: Systems shape stories. High contrast red, cream, and black."},
+  {"id":"title-06","category":"title","prompt":"Square calm title reading Breathe into focus with soft blue, generous space, and slow movement."},
+
+  {"id":"quote-01","category":"quote","prompt":"Square quote animation: Clarity follows motion. Attribute it to Studio Notes. Editorial cream and blue."},
+  {"id":"quote-02","category":"quote","prompt":"Landscape quote: Good design makes change feel inevitable. Use elegant restrained typography."},
+  {"id":"quote-03","category":"quote","prompt":"Portrait quote animation reading Stay close to the work. Warm monochrome palette and gentle pacing."},
+  {"id":"quote-04","category":"quote","prompt":"Square quote: Momentum is a design material. Bold Swiss typography with a red accent."},
+  {"id":"quote-05","category":"quote","prompt":"Landscape quote reading Less noise. More signal. Make signal the emphasized word in electric yellow."},
+  {"id":"quote-06","category":"quote","prompt":"Portrait poetic quote: We become what we repeatedly make. Quiet midnight palette with subtle particles."},
+
+  {"id":"product-01","category":"product","prompt":"Landscape launch teaser for Nova. Copy: Focus at the speed of thought. Purple glass accent, available now."},
+  {"id":"product-02","category":"product","prompt":"Portrait launch teaser for Pulse headphones. Copy: Hear what matters. Black, white, and vivid green."},
+  {"id":"product-03","category":"product","prompt":"Square product announcement for Arc. Copy: Your work, in flow. Clean white interface-inspired motion."},
+  {"id":"product-04","category":"product","prompt":"Landscape teaser for a privacy app called Veil. Copy: Yours means yours. Dark, precise, understated."},
+  {"id":"product-05","category":"product","prompt":"Portrait launch for a running shoe named Aero. Copy: Leave gravity behind. Fast orange typography."},
+  {"id":"product-06","category":"product","prompt":"Landscape launch for local AI tool Foundry. Copy: Intelligence stays with you. Blue grid accent."},
+
+  {"id":"metric-01","category":"metric","prompt":"Landscape metric reveal: +184% year-over-year creator growth. Dark green with mint emphasis."},
+  {"id":"metric-02","category":"metric","prompt":"Square metric card: 2.4M moments created. Bright editorial yellow and black."},
+  {"id":"metric-03","category":"metric","prompt":"Portrait data reveal: 47 hours saved every month. Calm blue SaaS visual language."},
+  {"id":"metric-04","category":"metric","prompt":"Landscape metric reveal: 99.99% uptime. Technical monospace mood with a cyan accent."},
+  {"id":"metric-05","category":"metric","prompt":"Square impact metric: 12,400 trees restored. Earthy palette with restrained particles."},
+  {"id":"metric-06","category":"metric","prompt":"Portrait milestone: 1 million members. Celebratory magenta without visual clutter."},
+
+  {"id":"event-01","category":"event","prompt":"Portrait event promo: Signal Design Conf, Bengaluru, October 24. Amber and black, bold condensed feeling."},
+  {"id":"event-02","category":"event","prompt":"Square event promo: After Dark, Friday 9 PM. Neon violet club energy with readable details."},
+  {"id":"event-03","category":"event","prompt":"Landscape conference opener: Systems 2026, London, November 8. Serious editorial red and cream."},
+  {"id":"event-04","category":"event","prompt":"Portrait workshop promo: Type in Motion, Saturday 10 AM. Playful orange and cobalt."},
+  {"id":"event-05","category":"event","prompt":"Square exhibition announcement: New Forms, Gallery 12, opening tonight. Minimal monochrome."},
+  {"id":"event-06","category":"event","prompt":"Landscape online event: Local AI Summit, streaming live at 6 PM. Futuristic green grid aesthetic."},
+
+  {"id":"outro-01","category":"outro","prompt":"Landscape logo outro for Fanne Khan with tagline Motion, with intent. Ivory, black, and coral."},
+  {"id":"outro-02","category":"outro","prompt":"Square brand outro for North with tagline Find your direction. Navy and ice blue."},
+  {"id":"outro-03","category":"outro","prompt":"Portrait end card for Loop with tagline Make it repeatable. Graphic red and white."},
+  {"id":"outro-04","category":"outro","prompt":"Landscape logo reveal for Quiet Hours. Understated charcoal and silver, no 3D accent."},
+  {"id":"outro-05","category":"outro","prompt":"Square outro for Good Measure with tagline Progress, made visible. Emerald and cream."},
+  {"id":"outro-06","category":"outro","prompt":"Portrait creator end card: Made by Asha, @asha.design. Warm, personal, and minimal."},
+
+  {"id":"stress-01","category":"stress","prompt":"Landscape title using this exact long copy: Build systems that help ambitious creative teams move from uncertain ideas to confident outcomes."},
+  {"id":"stress-02","category":"stress","prompt":"Portrait promo with exact details: Creative Coding Meetup, Indiranagar Social, September 26, doors at 6:30 PM, entry free."},
+  {"id":"stress-03","category":"stress","prompt":"Square bilingual-feeling launch with exact English copy: Namaste, future. Use an Indian editorial palette without stereotypes."},
+  {"id":"stress-04","category":"stress","prompt":"Landscape metric sequence containing both 38% faster and 2.1x more accurate. Keep the two claims visually distinct."},
+  {"id":"stress-05","category":"stress","prompt":"Portrait teaser with no invented copy: SOMA / AW26 / COMING SOON. Luxury editorial treatment."},
+  {"id":"stress-06","category":"stress","prompt":"Square accessibility-first announcement: Applications close Sunday at 5 PM. Maximum readability and minimal movement."}
+]

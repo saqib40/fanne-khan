@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "id": "taste-event-01",
+  "category": "event",
+  "prompt": "Portrait event promo. Exact copy: BENGALURU · 8 PM / NIGHT SIGNAL / An evening of moving type. Style direction: electric cyan.",
+  "createdAt": "2026-09-19T09:14:46.440Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "NIGHT SIGNAL",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#061118",
+          "foreground": "#f2fbff",
+          "accent": "#35dcff",
+          "muted": "#8196a0"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.5
+        },
+        "segments": [
+          {
+            "id": "title-night-signal",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "event",
+            "layout": "left",
+            "entrance": "wipe",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "BENGALURU · 8 PM",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "NIGHT SIGNAL",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "An evening of moving type",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20624547,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 18.18,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 11.65,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01285,
+          "activeSamplePairs": 5,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "NIGHT SIGNAL",
+        "fps": 30,
+        "width": 1080,
+        "height": 1920,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#071a14",
+          "foreground": "#f2fbf9",
+          "accent": "#ff9631",
+          "muted": "#9bd0ca"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "boundary-1",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "event",
+            "layout": "split",
+            "entrance": "stagger",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "eyebrow",
+                "text": "BENGALURU · 8 PM",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "NIGHT SIGNAL",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "An evening of moving type",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20310360,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 17.09,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 8.28,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01029,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-event-01/A.mp4",
+    "B": "out/preferences/taste-event-01/B.mp4"
+  }
+}

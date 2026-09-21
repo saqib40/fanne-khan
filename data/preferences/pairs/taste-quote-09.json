@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-quote-09",
+  "category": "quote",
+  "prompt": "Landscape quote motion design. Exact copy: Craft is care / made visible. Style direction: high-contrast amber on black.",
+  "createdAt": "2026-09-19T08:41:56.791Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Craft is care made visible",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#060609",
+          "foreground": "#ffffff",
+          "accent": "#ffd000",
+          "muted": "#aaa499"
+        },
+        "typography": {
+          "display": "space-grotesk",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.5
+        },
+        "segments": [
+          {
+            "id": "quote-craft",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "wipe",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Craft is care",
+                "emphasis": false
+              },
+              {
+                "role": "title",
+                "text": "made visible",
+                "emphasis": true
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20495602,
+        "temperature": 0.75
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 20.24,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 13.76,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01988,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Craft is care made visible",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 150,
+        "palette": {
+          "background": "#090807",
+          "foreground": "#fff1ed",
+          "accent": "#ffb200",
+          "muted": "#c69b79"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "glass",
+          "intensity": 0.3
+        },
+        "segments": [
+          {
+            "id": "quote-craft-is-care",
+            "startFrame": 0,
+            "durationInFrames": 150,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Craft is care",
+                "emphasis": true
+              },
+              {
+                "role": "title",
+                "text": "made visible",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20286144,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 18.16,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 11.07,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 5,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01646,
+          "activeSamplePairs": 4,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-quote-09/A.mp4",
+    "B": "out/preferences/taste-quote-09/B.mp4"
+  }
+}

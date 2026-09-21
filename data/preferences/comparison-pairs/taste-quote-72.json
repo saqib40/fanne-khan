@@ -1,0 +1,166 @@
+{
+  "version": "1.0",
+  "id": "taste-quote-72",
+  "category": "quote",
+  "prompt": "Make a refined kinetic quote with exact copy:\nDesign is intelligence made visible.\n— Alina Wheeler\nUse a warm paper background, black type, red accent, and subtle typographic motion.",
+  "createdAt": "2026-09-19T15:32:26.863Z",
+  "comparison": "stage3-sft-vs-dpo",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Design is intelligence made visible",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f2eadf",
+          "foreground": "#171713",
+          "accent": "#d82945",
+          "muted": "#6d6a61"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.04,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.25
+        },
+        "segments": [
+          {
+            "id": "quote-design-is",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "stagger",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Design is intelligence made visible",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "— Alina Wheeler",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20473486,
+        "temperature": 0.75,
+        "model": "dpo"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.07,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 4.07,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02279,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Design is intelligence made visible",
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "durationInFrames": 210,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#d0413c",
+          "muted": "#6a675b"
+        },
+        "typography": {
+          "display": "fraunces",
+          "body": "inter",
+          "tracking": -0.03,
+          "uppercaseTitles": true
+        },
+        "accent": {
+          "type": "grid",
+          "intensity": 0.25
+        },
+        "segments": [
+          {
+            "id": "quote-design-is",
+            "startFrame": 0,
+            "durationInFrames": 210,
+            "kind": "quote",
+            "layout": "left",
+            "entrance": "stagger",
+            "exit": "shrink",
+            "lines": [
+              {
+                "role": "title",
+                "text": "Design is intelligence made visible",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "— Alina Wheeler",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20473486,
+        "temperature": 0.75,
+        "model": "sft"
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 3.89,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 7,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02227,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/comparison/taste-quote-72/A.mp4",
+    "B": "out/comparison/taste-quote-72/B.mp4"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "taste-metric-07",
+  "category": "metric",
+  "prompt": "Square metric reveal. Exact copy: -43% / fewer repeated tasks. Style direction: minimal monochrome with red accent.",
+  "createdAt": "2026-09-19T09:11:18.834Z",
+  "model": "Qwen2.5-Coder-7B-Instruct + stage3 LoRA",
+  "candidates": {
+    "A": {
+      "spec": {
+        "version": "1.0",
+        "name": "Repetition reduction",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#f6efe8",
+          "foreground": "#111111",
+          "accent": "#b1261c",
+          "muted": "#726b65"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.04,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "metric-reveal",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "metric",
+            "layout": "split",
+            "entrance": "wipe",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "metric",
+                "text": "-43%",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "fewer repeated tasks",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20616475,
+        "temperature": 0.9
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 16.57,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 5.83,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.01767,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    },
+    "B": {
+      "spec": {
+        "version": "1.0",
+        "name": "Repeated tasks",
+        "fps": 30,
+        "width": 1080,
+        "height": 1080,
+        "durationInFrames": 180,
+        "palette": {
+          "background": "#f0eadf",
+          "foreground": "#171713",
+          "accent": "#b12610",
+          "muted": "#524c43"
+        },
+        "typography": {
+          "display": "inter",
+          "body": "inter",
+          "tracking": -0.05,
+          "uppercaseTitles": false
+        },
+        "accent": {
+          "type": "none",
+          "intensity": 0
+        },
+        "segments": [
+          {
+            "id": "metric-repeated-tasks",
+            "startFrame": 0,
+            "durationInFrames": 180,
+            "kind": "metric",
+            "layout": "left",
+            "entrance": "rise",
+            "exit": "fade",
+            "lines": [
+              {
+                "role": "metric",
+                "text": "-43%",
+                "emphasis": true
+              },
+              {
+                "role": "subtitle",
+                "text": "fewer repeated tasks",
+                "emphasis": false
+              }
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "repaired": false,
+        "normalized": [],
+        "elapsedSeconds": 0,
+        "seed": 20302288,
+        "temperature": 0.45
+      },
+      "hardGates": {
+        "foregroundContrast": {
+          "value": 15.01,
+          "pass": true
+        },
+        "accentContrast": {
+          "value": 5.56,
+          "pass": true
+        },
+        "readableDuration": {
+          "seconds": 6,
+          "pass": true
+        },
+        "motionPresent": {
+          "peak": 0.02105,
+          "activeSamplePairs": 3,
+          "pass": true
+        }
+      }
+    }
+  },
+  "videos": {
+    "A": "out/preferences/taste-metric-07/A.mp4",
+    "B": "out/preferences/taste-metric-07/B.mp4"
+  }
+}
