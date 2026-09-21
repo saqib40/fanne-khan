@@ -3,174 +3,561 @@ export const demoPage = `<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fanne Khan — Local Motion Lab</title>
+  <title>Fanne Khan — Motion Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@700;800&family=Syne:wght@700;800&family=Rozha+One&display=swap" rel="stylesheet">
   <style>
     :root {
       color-scheme: dark;
-      --ink: #f5f1e8;
-      --muted: #9d9b95;
-      --panel: rgba(19, 20, 24, 0.86);
-      --line: rgba(255,255,255,0.1);
-      --coral: #ff725e;
-      --lime: #c9f774;
-      --bg: #090a0d;
+      --bg: #09090b;
+      --surface-glass: rgba(18, 19, 23, 0.72);
+      --border-glass: rgba(255, 255, 255, 0.1);
+      --border-focus: rgba(255, 255, 255, 0.28);
+      --ink: #ececed;
+      --ink-dim: #a1a1aa;
+      --muted: #71717a;
+      --faint: #3f3f46;
+      --accent: #f4f4f5;
+      --accent-text: #09090b;
     }
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+      overflow-x: hidden;
+    }
     body {
-      margin: 0;
-      min-height: 100vh;
       color: var(--ink);
-      font-family: Inter, system-ui, sans-serif;
+      font-family: 'Inter', -apple-system, sans-serif;
       background:
-        radial-gradient(circle at 8% 2%, rgba(255,114,94,0.15), transparent 32rem),
-        radial-gradient(circle at 94% 80%, rgba(201,247,116,0.09), transparent 30rem),
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 255, 255, 0.04), transparent 70%),
+        radial-gradient(ellipse 60% 40% at 50% 110%, rgba(255, 255, 255, 0.02), transparent 60%),
         var(--bg);
-    }
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      opacity: 0.25;
-      background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-      background-size: 48px 48px;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      position: relative;
     }
     button, textarea, select { font: inherit; }
-    button { color: inherit; }
-    main { width: min(1480px, 94vw); margin: 0 auto; padding: 26px 0 52px; position: relative; }
-    header { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 28px; }
-    .brand { display: flex; align-items: center; gap: 13px; }
-    .mark { width: 36px; height: 36px; border-radius: 11px; display: grid; place-items: center; background: var(--coral); color: #120a08; font-weight: 800; font-size: 18px; transform: rotate(-4deg); }
-    .brand-name { font-weight: 700; font-size: 17px; letter-spacing: -0.02em; }
-    .brand-sub { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .13em; }
-    .health { display: flex; gap: 9px; align-items: center; border: 1px solid var(--line); background: rgba(11,12,15,.72); padding: 9px 13px; border-radius: 999px; color: var(--muted); font-size: 13px; }
-    .dot { width: 8px; height: 8px; border-radius: 50%; background: #73757b; box-shadow: 0 0 0 4px rgba(115,117,123,.1); }
-    .health.ready .dot { background: var(--lime); box-shadow: 0 0 0 4px rgba(201,247,116,.12); }
-    .grid { display: grid; grid-template-columns: minmax(330px, .78fr) minmax(520px, 1.35fr); gap: 20px; }
-    .panel { border: 1px solid var(--line); background: var(--panel); backdrop-filter: blur(18px); border-radius: 24px; box-shadow: 0 24px 80px rgba(0,0,0,.3); }
-    .composer { padding: 26px; }
-    .eyebrow { color: var(--coral); font: 700 11px Manrope; letter-spacing: .16em; text-transform: uppercase; }
-    h1 { margin: 10px 0 9px; font-weight: 700; font-size: clamp(29px, 3vw, 47px); line-height: 1.03; letter-spacing: -.045em; max-width: 600px; }
-    .lead { margin: 0 0 23px; color: var(--muted); line-height: 1.55; font-size: 14px; }
-    label.field-label { display: block; margin: 0 0 9px; font-weight: 600; font-size: 13px; }
-    textarea { width: 100%; min-height: 184px; resize: vertical; color: var(--ink); background: #0c0d11; border: 1px solid rgba(255,255,255,.13); border-radius: 15px; padding: 15px; line-height: 1.5; outline: none; transition: border .2s, box-shadow .2s; }
-    textarea:focus { border-color: rgba(255,114,94,.75); box-shadow: 0 0 0 4px rgba(255,114,94,.09); }
-    .counter { text-align: right; color: var(--muted); font-size: 11px; margin-top: 6px; }
-    .presets { display: flex; flex-wrap: wrap; gap: 7px; margin: 15px 0 21px; }
-    .preset { border: 1px solid var(--line); background: #15161b; padding: 8px 10px; border-radius: 9px; cursor: pointer; font-size: 12px; }
-    .preset:hover { border-color: rgba(255,114,94,.55); background: #1c181a; }
-    .options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
-    .select-wrap { border: 1px solid var(--line); background: #101116; border-radius: 12px; padding: 9px 11px; }
-    .select-wrap span { display: block; color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
-    select { width: 100%; border: 0; color: var(--ink); background: transparent; outline: 0; margin-top: 3px; }
-    .generate { width: 100%; border: 0; border-radius: 13px; padding: 14px 18px; cursor: pointer; background: var(--coral); color: #170b09; font-weight: 800; font-size: 14px; transition: transform .2s, filter .2s; }
-    .generate:hover { transform: translateY(-1px); filter: brightness(1.06); }
-    .generate:disabled { cursor: wait; filter: grayscale(.4); opacity: .65; transform: none; }
-    .privacy { display: flex; gap: 8px; align-items: center; margin-top: 14px; color: var(--muted); font-size: 11px; }
-    .stage { min-height: 700px; display: flex; flex-direction: column; overflow: hidden; }
-    .stage-top { display: flex; justify-content: space-between; gap: 14px; align-items: center; padding: 17px 20px; border-bottom: 1px solid var(--line); }
-    .stage-title { font-weight: 650; font-size: 14px; }
-    .status { color: var(--muted); font-size: 12px; }
-    .canvas { position: relative; min-height: 480px; flex: 1; display: grid; place-items: center; padding: 22px; background: #050608; }
-    .canvas::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(circle at center, transparent 45%, rgba(0,0,0,.32)); }
-    video { position: relative; z-index: 1; max-width: 100%; max-height: 62vh; border-radius: 10px; background: black; box-shadow: 0 20px 60px rgba(0,0,0,.55); }
-    .empty { position: relative; z-index: 1; text-align: center; color: var(--muted); max-width: 360px; }
-    .empty-icon { width: 76px; height: 76px; margin: 0 auto 18px; border: 1px solid var(--line); border-radius: 50%; display: grid; place-items: center; font-size: 25px; background: rgba(255,255,255,.025); }
-    .empty strong { display: block; color: var(--ink); font-weight: 650; font-size: 17px; margin-bottom: 6px; }
-    .progress { display: none; position: relative; z-index: 2; width: min(480px, 88%); }
-    .progress.active { display: block; }
-    .progress-head { display: flex; justify-content: space-between; margin-bottom: 12px; }
-    .progress-head strong { font-weight: 650; font-size: 15px; }
-    .bar { height: 5px; overflow: hidden; border-radius: 99px; background: #24262c; }
-    .bar span { display: block; width: 36%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--coral), #ffbd72); animation: travel 1.55s ease-in-out infinite; }
-    @keyframes travel { 0% { transform: translateX(-110%); } 100% { transform: translateX(300%); } }
-    .steps { margin-top: 18px; display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; color: #696c74; font-size: 11px; text-align: center; }
-    .steps .on { color: var(--ink); }
-    .result { display: none; padding: 18px 20px 20px; border-top: 1px solid var(--line); }
-    .result.show { display: block; }
-    .stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 9px; }
-    .stat { border: 1px solid var(--line); border-radius: 12px; padding: 11px; background: rgba(255,255,255,.025); }
-    .stat span { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
-    .stat strong { display: block; margin-top: 4px; font-weight: 700; font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .gates { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
-    .gate { border: 1px solid rgba(201,247,116,.2); color: #dfffb0; background: rgba(201,247,116,.06); border-radius: 999px; padding: 6px 9px; font-size: 11px; }
-    .actions { display: flex; gap: 9px; margin-top: 14px; }
-    .action { text-decoration: none; border: 1px solid var(--line); background: #181a20; color: var(--ink); border-radius: 10px; padding: 9px 12px; font-size: 12px; cursor: pointer; }
-    .error { display: none; margin-top: 12px; padding: 11px 12px; border: 1px solid rgba(255,114,94,.3); background: rgba(255,114,94,.08); color: #ffc0b6; border-radius: 11px; font-size: 12px; line-height: 1.45; white-space: pre-wrap; }
-    .error.show { display: block; }
-    @media (max-width: 960px) { .grid { grid-template-columns: 1fr; } .stage { min-height: 620px; } }
-    @media (max-width: 560px) { main { width: 92vw; } header { align-items: flex-start; } .brand-sub { display: none; } .composer { padding: 20px; } .options, .stats { grid-template-columns: 1fr 1fr; } .canvas { min-height: 360px; padding: 12px; } }
+
+    /* Top Ambient HUD */
+    .hud-top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 40;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px 36px;
+      pointer-events: none;
+    }
+    .hud-top > * {
+      pointer-events: auto;
+    }
+    .hud-left {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13.5px;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+    }
+    .hud-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13.5px;
+      transition: color 0.15s ease;
+    }
+    .hud-link:hover {
+      color: var(--ink);
+    }
+    .hud-right {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      color: var(--muted);
+    }
+
+    /* Main Center Canvas Stage */
+    .stage-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 24px 170px;
+      position: relative;
+      z-index: 10;
+      min-height: 100vh;
+    }
+
+    /* Hero Typographic Centerpiece (Saloon style) */
+    .hero-canvas {
+      text-align: center;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      max-width: 1000px;
+      user-select: none;
+    }
+    .hero-hindi {
+      font-family: 'Rozha One', serif;
+      font-size: clamp(80px, 14.5vw, 158px);
+      line-height: 1.05;
+      color: var(--ink);
+      text-shadow: 0 14px 60px rgba(0, 0, 0, 0.9);
+      letter-spacing: 0.02em;
+    }
+    .hero-latin {
+      font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: clamp(14px, 2.2vw, 20px);
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    /* Video Player Centerpiece */
+    .player-wrap {
+      display: none;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 960px;
+      animation: fadeIn 0.4s ease forwards;
+    }
+    video {
+      max-width: 100%;
+      max-height: 58vh;
+      border-radius: 14px;
+      background: #000;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    }
+
+    /* Progress & Loading State */
+    .progress-box {
+      display: none;
+      width: min(440px, 90vw);
+      text-align: center;
+      animation: fadeIn 0.3s ease;
+    }
+    .progress-box.active { display: block; }
+    .progress-status {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--ink);
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .progress-bar-track {
+      height: 3px;
+      overflow: hidden;
+      border-radius: 99px;
+      background: rgba(255, 255, 255, 0.08);
+      margin-bottom: 14px;
+    }
+    .progress-bar-fill {
+      display: block;
+      width: 35%;
+      height: 100%;
+      background: #e4e4e7;
+      border-radius: inherit;
+      animation: travel 1.4s ease-in-out infinite;
+    }
+    @keyframes travel {
+      0% { transform: translateX(-110%); }
+      100% { transform: translateX(330%); }
+    }
+    .progress-steps {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--faint);
+    }
+    .progress-steps .on {
+      color: var(--ink);
+    }
+
+    /* Telemetry Pill Strip (Post-render) */
+    .telemetry-strip {
+      display: none;
+      margin-top: 18px;
+      background: var(--surface-glass);
+      border: 1px solid var(--border-glass);
+      backdrop-filter: blur(20px);
+      padding: 8px 18px;
+      border-radius: 999px;
+      align-items: center;
+      gap: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--ink-dim);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .telemetry-strip.show { display: flex; }
+    .telemetry-item {
+      display: flex;
+      gap: 5px;
+      align-items: baseline;
+    }
+    .telemetry-item span {
+      color: var(--muted);
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+    .telemetry-item strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+    .telemetry-actions {
+      display: flex;
+      gap: 8px;
+      margin-left: 6px;
+    }
+    .hud-action {
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-glass);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 4px 11px;
+      font-size: 11px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .hud-action:hover {
+      background: rgba(255, 255, 255, 0.14);
+      border-color: var(--border-focus);
+    }
+    .gates-container {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .gate-chip {
+      border: 1px solid var(--border-glass);
+      color: var(--ink-dim);
+      border-radius: 999px;
+      padding: 2px 7px;
+      font-size: 10px;
+    }
+
+    /* Floating Bottom Dock (Saloon player capsule style) */
+    .dock-container {
+      position: fixed;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    /* Quiet Presets Row above Dock */
+    .presets-dock {
+      display: flex;
+      gap: 9px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .preset-pill {
+      background: rgba(18, 19, 23, 0.65);
+      border: 1px solid var(--border-glass);
+      backdrop-filter: blur(14px);
+      color: var(--ink-dim);
+      padding: 5px 13px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .preset-pill:hover {
+      background: rgba(255, 255, 255, 0.09);
+      border-color: var(--border-focus);
+      color: var(--ink);
+    }
+
+    /* The Main Capsule Bar */
+    .capsule-bar {
+      width: min(920px, 94vw);
+      background: var(--surface-glass);
+      border: 1px solid var(--border-glass);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border-radius: 999px;
+      padding: 9px 12px 9px 22px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .capsule-bar:focus-within {
+      border-color: var(--border-focus);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+    }
+
+    .capsule-input-wrap {
+      flex: 1;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    textarea.capsule-input {
+      width: 100%;
+      height: 26px;
+      min-height: 26px;
+      max-height: 80px;
+      resize: none;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--ink);
+      font-size: 14.5px;
+      line-height: 1.45;
+      padding: 2px 0;
+    }
+    textarea.capsule-input::placeholder {
+      color: var(--faint);
+    }
+    .capsule-counter {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      margin-left: 10px;
+      white-space: nowrap;
+    }
+
+    /* Inline Selectors */
+    .capsule-selectors {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-left: 1px solid var(--border-glass);
+      padding-left: 14px;
+    }
+    .capsule-select-group {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .capsule-select-label {
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      text-transform: uppercase;
+    }
+    .capsule-select-group select {
+      border: none;
+      background: transparent;
+      color: var(--ink-dim);
+      font-size: 12.5px;
+      outline: none;
+      cursor: pointer;
+    }
+    .capsule-select-group select option {
+      background: #141519;
+      color: var(--ink);
+    }
+
+    /* Circular Play/Generate CTA Button (Like Saloon Player) */
+    .btn-capsule-play {
+      width: 46px;
+      height: 46px;
+      min-width: 46px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: none;
+      color: var(--accent-text);
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: transform 0.15s ease, background-color 0.15s ease, opacity 0.15s ease;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    }
+    .btn-capsule-play:hover {
+      transform: scale(1.05);
+      background: #ffffff;
+    }
+    .btn-capsule-play:disabled {
+      cursor: wait;
+      opacity: 0.35;
+      transform: none;
+    }
+    .btn-capsule-play svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* Error Banner */
+    .dock-error {
+      display: none;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: rgba(18, 19, 23, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(16px);
+      border-radius: 999px;
+      color: #e4e4e7;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      max-width: min(780px, 94vw);
+      text-align: center;
+    }
+    .dock-error.show { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .capsule-selectors { display: none; }
+      .hero-title { font-size: 48px; }
+      .stage-container { padding-bottom: 190px; }
+      .capsule-bar { border-radius: 20px; }
+    }
   </style>
 </head>
 <body>
-<main>
-  <header>
-    <div class="brand">
-      <div class="mark">F</div>
-      <div><div class="brand-name">Fanne Khan</div><div class="brand-sub">Local Motion Lab</div></div>
+
+  <!-- Top Ambient HUD -->
+  <header class="hud-top">
+    <div class="hud-left" id="liveTime">01:22 am</div>
+    <div class="hud-right">
+      <a href="https://github.com/saqib40/fanne-khan" target="_blank" rel="noopener noreferrer" class="hud-link">GitHub ↗</a>
     </div>
-    <div class="health" id="health"><span class="dot"></span><span id="healthText">Checking local model…</span></div>
   </header>
-  <div class="grid">
-    <section class="panel composer">
-      <div class="eyebrow">DPO-tuned motion director</div>
-      <h1>Turn words into motion.</h1>
-      <p class="lead">Describe a short kinetic-typography piece. Your local model writes a constrained motion plan; trusted Remotion components render the result.</p>
-      <form id="form">
-        <label class="field-label" for="prompt">Creative brief</label>
-        <textarea id="prompt" maxlength="600" required placeholder="Exact copy: MAKE IDEAS MOVE. Use editorial typography, warm ivory, charcoal, and one coral accent."></textarea>
-        <div class="counter"><span id="count">0</span>/600</div>
-        <div class="presets">
-          <button class="preset" type="button" data-preset="hero">Hero title</button>
-          <button class="preset" type="button" data-preset="product">Product</button>
-          <button class="preset" type="button" data-preset="metric">Metric</button>
-          <button class="preset" type="button" data-preset="event">Event</button>
-        </div>
-        <div class="options">
-          <label class="select-wrap"><span>Candidates</span><select id="candidates"><option value="1">1 · Fast</option><option value="2" selected>2 · Recommended</option><option value="3">3 · Explore</option></select></label>
-          <label class="select-wrap"><span>Seed</span><select id="seed"><option value="20261001" selected>Demo repeatable</option><option value="random">Fresh variation</option></select></label>
-        </div>
-        <button class="generate" id="generate" type="submit">Generate motion video →</button>
-        <div class="privacy">◉ Runs locally · No prompt or video leaves this machine</div>
-        <div class="error" id="error"></div>
-      </form>
-    </section>
-    <section class="panel stage">
-      <div class="stage-top"><div class="stage-title">Output preview</div><div class="status" id="status">Ready for a brief</div></div>
-      <div class="canvas">
-        <div class="empty" id="empty"><div class="empty-icon">◇</div><strong>Your motion piece appears here</strong><div>Generation, validation, ranking, and rendering happen in one local pipeline.</div></div>
-        <div class="progress" id="progress">
-          <div class="progress-head"><strong id="progressText">Directing the first frame…</strong><span id="timer">0:00</span></div>
-          <div class="bar"><span></span></div>
-          <div class="steps"><div class="on" id="step1">01 Generate</div><div id="step2">02 Validate</div><div id="step3">03 Render</div></div>
-        </div>
-        <video id="video" controls loop playsinline></video>
+
+  <!-- Main Centerpiece Canvas -->
+  <main class="stage-container">
+    
+    <!-- Hero Typographic Identity (Empty State) -->
+    <div class="hero-canvas" id="empty">
+      <h1 class="hero-hindi">फन्ने खां</h1>
+      <div class="hero-latin">FANNE KHAN</div>
+    </div>
+
+    <!-- Progress State -->
+    <div class="progress-box" id="progress">
+      <div class="progress-status">
+        <strong id="progressText">Composing initial frame…</strong>
+        <span id="timer">0:00</span>
       </div>
-      <div class="result" id="result">
-        <div class="stats">
-          <div class="stat"><span>Quality</span><strong id="score">—</strong></div>
-          <div class="stat"><span>Duration</span><strong id="duration">—</strong></div>
-          <div class="stat"><span>Format</span><strong id="format">—</strong></div>
-          <div class="stat"><span>Total time</span><strong id="latency">—</strong></div>
-        </div>
-        <div class="gates" id="gates"></div>
-        <div class="actions"><a class="action" id="download" download>Download MP4</a><button class="action" id="details" type="button">Copy MotionSpec</button></div>
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill"></div>
       </div>
-    </section>
-  </div>
-</main>
+      <div class="progress-steps">
+        <span class="on" id="step1">Generate</span>
+        <span id="step2">Validate</span>
+        <span id="step3">Render</span>
+      </div>
+    </div>
+
+    <!-- Video Output Player -->
+    <div class="player-wrap" id="playerWrap">
+      <video id="video" controls loop playsinline></video>
+      
+      <!-- Telemetry Strip (Saloon style floating bar) -->
+      <div class="telemetry-strip" id="result">
+        <div class="telemetry-item"><span>Score</span><strong id="score">—</strong></div>
+        <div class="telemetry-item"><span>Duration</span><strong id="duration">—</strong></div>
+        <div class="telemetry-item"><span>Format</span><strong id="format">—</strong></div>
+        <div class="telemetry-item"><span>Time</span><strong id="latency">—</strong></div>
+        <div class="gates-container" id="gates"></div>
+        <div class="telemetry-actions">
+          <a class="hud-action" id="download" download>Download</a>
+          <button class="hud-action" id="details" type="button">Copy Spec</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Floating HUD Dock (Bottom Controller) -->
+  <footer class="dock-container">
+    
+    <!-- Floating Presets -->
+    <div class="presets-dock">
+      <button class="preset-pill" type="button" data-preset="hero">Hero Title</button>
+      <button class="preset-pill" type="button" data-preset="product">Product Launch</button>
+      <button class="preset-pill" type="button" data-preset="metric">Metric Reveal</button>
+      <button class="preset-pill" type="button" data-preset="event">Kinetic Event</button>
+    </div>
+
+    <!-- The Capsule Bar -->
+    <form class="capsule-bar" id="form">
+      <div class="capsule-input-wrap">
+        <textarea class="capsule-input" id="prompt" maxlength="600" required rows="1" placeholder="Type a creative motion brief... (e.g. Exact copy: TURN STATIC INTO SIGNAL)"></textarea>
+        <span class="capsule-counter"><span id="count">0</span>/600</span>
+      </div>
+
+      <div class="capsule-selectors">
+        <label class="capsule-select-group">
+          <span class="capsule-select-label">Candidates:</span>
+          <select id="candidates">
+            <option value="1">1 · Fast</option>
+            <option value="2" selected>2 · Recommended</option>
+            <option value="3">3 · Explore</option>
+          </select>
+        </label>
+        <label class="capsule-select-group">
+          <span class="capsule-select-label">Seed:</span>
+          <select id="seed">
+            <option value="20261001" selected>Demo repeatable</option>
+            <option value="random">Fresh variation</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- Play / Generate Button -->
+      <button class="btn-capsule-play" id="generate" type="submit" title="Generate motion piece">
+        <svg viewBox="0 0 24 24">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+      </button>
+    </form>
+
+    <div class="dock-error" id="error"></div>
+  </footer>
+
 <script>
+// Live clock
+function updateClock() {
+  const now = new Date();
+  const hours = now.getHours();
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const ampm = hours >= 12 ? 'pm' : 'am';
+  const displayHours = hours % 12 || 12;
+  const clockEl = document.getElementById('liveTime');
+  if (clockEl) clockEl.textContent = displayHours + ':' + minutes + ' ' + ampm;
+}
+setInterval(updateClock, 1000);
+updateClock();
+
 const presets = {
   hero: 'Create a 6-second kinetic title. Exact copy: TURN STATIC INTO SIGNAL. Use warm ivory on deep charcoal with one coral accent, measured motion, and no extra text.',
   product: 'Create a polished 7-second product announcement. Exact copy: NORTHSTAR NOTES / Ideas, finally in focus. Use midnight blue, icy cyan, and restrained depth.',
   metric: 'Create an 8-second metric reveal with exact copy: FASTER ITERATION / 63% / LESS REVIEW TIME. Make the number dominant with deep plum and pale pink.',
   event: 'Create a kinetic event card. Exact copy: MOTION NORTH / NOVEMBER 8–9 / HELSINKI. Use architectural type, cold blue, white, and a subtle grid rhythm.'
 };
+
 const form = document.getElementById('form');
 const prompt = document.getElementById('prompt');
 const button = document.getElementById('generate');
 const empty = document.getElementById('empty');
 const progress = document.getElementById('progress');
+const playerWrap = document.getElementById('playerWrap');
 const video = document.getElementById('video');
 const result = document.getElementById('result');
 const error = document.getElementById('error');
@@ -178,60 +565,50 @@ const status = document.getElementById('status');
 let latestSpec = null;
 let timerHandle = null;
 
+// Auto-expand textarea slightly
+prompt.addEventListener('input', function() {
+  document.getElementById('count').textContent = prompt.value.length;
+  this.style.height = 'auto';
+  this.style.height = Math.min(this.scrollHeight, 72) + 'px';
+});
+
 document.querySelectorAll('[data-preset]').forEach(function(item) {
   item.addEventListener('click', function() {
     prompt.value = presets[item.dataset.preset];
     document.getElementById('count').textContent = prompt.value.length;
+    prompt.style.height = 'auto';
+    prompt.style.height = Math.min(prompt.scrollHeight, 72) + 'px';
     prompt.focus();
   });
 });
-prompt.addEventListener('input', function() {
-  document.getElementById('count').textContent = prompt.value.length;
-});
+
 document.getElementById('details').addEventListener('click', async function() {
   if (!latestSpec) return;
   await navigator.clipboard.writeText(JSON.stringify(latestSpec, null, 2));
   this.textContent = 'Copied ✓';
-  setTimeout(() => { this.textContent = 'Copy MotionSpec'; }, 1400);
+  setTimeout(() => { this.textContent = 'Copy Spec'; }, 1400);
 });
-
-async function checkHealth() {
-  const health = document.getElementById('health');
-  const text = document.getElementById('healthText');
-  try {
-    const response = await fetch('/health');
-    const body = await response.json();
-    if (body.available && body.installed) {
-      health.classList.add('ready');
-      text.textContent = body.backend === 'unsloth' ? 'DPO adapter ready' : 'Ollama baseline ready';
-      return;
-    }
-    text.textContent = 'Model runtime unavailable';
-  } catch {
-    text.textContent = 'API unavailable';
-  }
-}
 
 function beginProgress() {
   empty.style.display = 'none';
+  playerWrap.style.display = 'none';
   video.style.display = 'none';
   result.classList.remove('show');
   progress.classList.add('active');
   error.classList.remove('show');
   button.disabled = true;
-  button.textContent = 'Creating locally…';
-  status.textContent = 'Model is composing';
+  if (status) status.textContent = 'Directing piece…';
   const started = Date.now();
   timerHandle = setInterval(function() {
     const seconds = Math.floor((Date.now() - started) / 1000);
     document.getElementById('timer').textContent = Math.floor(seconds / 60) + ':' + String(seconds % 60).padStart(2, '0');
     if (seconds > 12) {
       document.getElementById('step2').classList.add('on');
-      document.getElementById('progressText').textContent = 'Checking composition and motion…';
+      document.getElementById('progressText').textContent = 'Validating motion…';
     }
     if (seconds > 28) {
       document.getElementById('step3').classList.add('on');
-      document.getElementById('progressText').textContent = 'Rendering the winning direction…';
+      document.getElementById('progressText').textContent = 'Rendering winning piece…';
     }
   }, 500);
 }
@@ -240,7 +617,6 @@ function finishProgress() {
   clearInterval(timerHandle);
   progress.classList.remove('active');
   button.disabled = false;
-  button.textContent = 'Generate another variation →';
 }
 
 form.addEventListener('submit', async function(event) {
@@ -261,40 +637,38 @@ form.addEventListener('submit', async function(event) {
     const body = await response.json();
     if (!response.ok) {
       const failures = [].concat(body.generationFailures || [], body.evaluationFailures || []);
-      throw new Error(body.error || failures.join('\\n') || 'No candidate survived the quality gates.');
+      throw new Error(body.error || failures.join('\\n') || 'No candidate passed quality gates.');
     }
     latestSpec = body.winner.spec;
     video.src = body.videoUrl + '?v=' + Date.now();
+    playerWrap.style.display = 'flex';
     video.style.display = 'block';
     video.load();
     video.play().catch(function() {});
     document.getElementById('score').textContent = body.winner.score.toFixed(1);
-    document.getElementById('duration').textContent = (body.winner.spec.durationInFrames / body.winner.spec.fps).toFixed(1) + ' sec';
+    document.getElementById('duration').textContent = (body.winner.spec.durationInFrames / body.winner.spec.fps).toFixed(1) + 's';
     document.getElementById('format').textContent = body.winner.spec.width + '×' + body.winner.spec.height;
-    document.getElementById('latency').textContent = (body.elapsedSeconds + body.render.elapsedSeconds).toFixed(1) + ' sec';
+    document.getElementById('latency').textContent = (body.elapsedSeconds + body.render.elapsedSeconds).toFixed(1) + 's';
     const gates = document.getElementById('gates');
     gates.innerHTML = '';
     Object.entries(body.winner.evaluation.hardGates).forEach(function(entry) {
       const chip = document.createElement('span');
-      chip.className = 'gate';
+      chip.className = 'gate-chip';
       chip.textContent = '✓ ' + entry[0].replace(/([A-Z])/g, ' $1').toLowerCase();
       gates.appendChild(chip);
     });
     document.getElementById('download').href = body.videoUrl;
     result.classList.add('show');
-    status.textContent = body.winner.spec.name + ' · passed every hard gate';
+    if (status) status.textContent = body.winner.spec.name;
   } catch (cause) {
     empty.style.display = 'block';
     error.textContent = cause instanceof Error ? cause.message : String(cause);
     error.classList.add('show');
-    status.textContent = 'Generation needs another attempt';
+    if (status) status.textContent = 'Generation failed';
   } finally {
     finishProgress();
   }
 });
-
-video.style.display = 'none';
-checkHealth();
 </script>
 </body>
 </html>`;
