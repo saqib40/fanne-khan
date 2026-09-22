@@ -123,7 +123,10 @@ const server = createServer(async (request, response) => {
     return;
   }
 
-  const videoMatch = request.url?.match(
+  const videoPath = request.url
+    ? new URL(request.url, 'http://localhost').pathname
+    : '';
+  const videoMatch = videoPath.match(
     /^\/video\/(generation-\d+-[a-z0-9]{6})\.mp4$/,
   );
   if (request.method === 'GET' && videoMatch) {

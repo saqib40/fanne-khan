@@ -1,0 +1,2419 @@
+{
+  "version": "1.0",
+  "updatedAt": "2026-09-22T06:04:15.450Z",
+  "backend": "unsloth",
+  "model": "/home/saqu/personal/fanne-khan/training/runs/dpo-taste/adapter",
+  "promptFile": "data/showcase/montage-prompts.json",
+  "outputDirectory": "out/showcase",
+  "candidateCount": 3,
+  "seedBase": 20269991,
+  "summary": {
+    "prompts": 24,
+    "attempted": 24,
+    "successful": 24,
+    "failed": 0,
+    "remaining": 0,
+    "meanScore": 84.16
+  },
+  "records": [
+    {
+      "id": "showcase-joke-01",
+      "category": "joke",
+      "theme": "programming",
+      "aspect": "landscape",
+      "palette": "charcoal-coral",
+      "montageRole": "hook",
+      "prompt": "Create a 6-second landscape kinetic joke. Exact copy: I TOLD MY CODE / TO TAKE A BREAK / IT THREW AN EXCEPTION. Style direction: warm ivory on deep charcoal, one coral accent, crisp staggered timing, and hold the punchline.",
+      "seed": 20261101,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 44.12,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-joke-01.mp4",
+      "render": {
+        "elapsedSeconds": 15.48,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "I TOLD MY CODE TO TAKE A BREAK",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 180,
+          "palette": {
+            "background": "#111013",
+            "foreground": "#f9f5f4",
+            "accent": "#ffb000",
+            "muted": "#d5cac9"
+          },
+          "typography": {
+            "display": "jetbrains-mono",
+            "body": "jetbrains-mono",
+            "tracking": -0.03,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "particles",
+            "intensity": 0.35
+          },
+          "segments": [
+            {
+              "id": "segment-1",
+              "startFrame": 0,
+              "durationInFrames": 180,
+              "kind": "quote",
+              "layout": "left",
+              "entrance": "stagger",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "title",
+                  "text": "I TOLD MY CODE",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "TO TAKE A BREAK",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "IT THREW AN EXCEPTION",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84.44,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 17.51,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 10.35,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 6,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.02042,
+            "activeSamplePairs": 4,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20261101,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-joke-02",
+      "category": "joke",
+      "theme": "sleep",
+      "aspect": "square",
+      "palette": "lavender-aubergine",
+      "montageRole": "rhythm",
+      "prompt": "Create a 6-second square kinetic joke. Exact copy: MY BED AND I / ARE PERFECT / THE ALARM IS JEALOUS. Style direction: pale lavender on aubergine, soft editorial type, playful scale motion, and a dry final hold.",
+      "seed": 20262110,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 41.59,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-joke-02.mp4",
+      "render": {
+        "elapsedSeconds": 10.65,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "My bed and I are perfect",
+          "fps": 30,
+          "width": 1080,
+          "height": 1080,
+          "durationInFrames": 180,
+          "palette": {
+            "background": "#34122c",
+            "foreground": "#fff1ed",
+            "accent": "#ff5c32",
+            "muted": "#c6989a"
+          },
+          "typography": {
+            "display": "jetbrains-mono",
+            "body": "jetbrains-mono",
+            "tracking": -0.03,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "title-my-bed-and-i",
+              "startFrame": 0,
+              "durationInFrames": 180,
+              "kind": "title",
+              "layout": "left",
+              "entrance": "scale",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "MY BED AND I",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "ARE PERFECT",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "THE ALARM IS JEALOUS",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 83.85,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 15.02,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 5.38,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 6,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01169,
+            "activeSamplePairs": 5,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20263107,
+        "temperature": 0.7
+      }
+    },
+    {
+      "id": "showcase-joke-03",
+      "category": "joke",
+      "theme": "internet",
+      "aspect": "portrait",
+      "palette": "cyan-navy",
+      "montageRole": "contrast",
+      "prompt": "Create a 6-second portrait technical joke. Exact copy: I HAVE A JOKE / ABOUT UDP / YOU MAY NOT GET IT. Style direction: electric cyan on midnight navy, JetBrains Mono, precise wipe motion, and no extra text.",
+      "seed": 20263119,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 38.91,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-joke-03.mp4",
+      "render": {
+        "elapsedSeconds": 12.47,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "I HAVE A JOKE",
+          "fps": 30,
+          "width": 1080,
+          "height": 1920,
+          "durationInFrames": 180,
+          "palette": {
+            "background": "#091017",
+            "foreground": "#ebfff6",
+            "accent": "#35dcff",
+            "muted": "#758894"
+          },
+          "typography": {
+            "display": "jetbrains-mono",
+            "body": "jetbrains-mono",
+            "tracking": -0.03,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "title-udp",
+              "startFrame": 0,
+              "durationInFrames": 180,
+              "kind": "product",
+              "layout": "split",
+              "entrance": "wipe",
+              "exit": "cut",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "I HAVE A JOKE",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "ABOUT UDP",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "YOU MAY NOT GET IT",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 85.93,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 18.37,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 11.69,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 6,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.00853,
+            "activeSamplePairs": 3,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20264116,
+        "temperature": 0.7
+      }
+    },
+    {
+      "id": "showcase-joke-04",
+      "category": "joke",
+      "theme": "meetings",
+      "aspect": "landscape",
+      "palette": "black-yellow",
+      "montageRole": "rhythm",
+      "prompt": "Create a 7-second landscape kinetic joke. Exact copy: THIS MEETING / COULD BE AN EMAIL / THIS EMAIL COULD BE A NAP. Style direction: black and solar yellow, bold geometric hierarchy, quick setup, slower punchline, and restrained accents.",
+      "seed": 20264128,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 38.65,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-joke-04.mp4",
+      "render": {
+        "elapsedSeconds": 14.48,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Email joke",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#0b0d12",
+            "foreground": "#fff2e9",
+            "accent": "#ffbc00",
+            "muted": "#c6995c"
+          },
+          "typography": {
+            "display": "space-grotesk",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "title-email",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "quote",
+              "layout": "left",
+              "entrance": "wipe",
+              "exit": "cut",
+              "lines": [
+                {
+                  "role": "title",
+                  "text": "THIS MEETING",
+                  "emphasis": false
+                },
+                {
+                  "role": "subtitle",
+                  "text": "COULD BE AN EMAIL",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "THIS EMAIL COULD BE A NAP",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 83.85,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 17.7,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 11.52,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01154,
+            "activeSamplePairs": 2,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20264128,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-number-01",
+      "category": "number",
+      "theme": "astronomy",
+      "aspect": "landscape",
+      "palette": "indigo-silver",
+      "montageRole": "wonder",
+      "prompt": "Create a 7-second landscape metric reveal. Exact copy: SUNLIGHT TO EARTH / 8 MINUTES / ACROSS THE DARK. Style direction: make the number dominant using deep indigo, silver white, and a subtle orbital accent.",
+      "seed": 20265137,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 43.17,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-number-01.mp4",
+      "render": {
+        "elapsedSeconds": 16.13,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "SUNLIGHT TO EARTH",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#f0eadf",
+            "foreground": "#111111",
+            "accent": "#2400ff",
+            "muted": "#777777"
+          },
+          "typography": {
+            "display": "space-grotesk",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "orbit",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "metric-sunlight",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "metric",
+              "layout": "left",
+              "entrance": "scale",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "SUNLIGHT TO EARTH",
+                  "emphasis": false
+                },
+                {
+                  "role": "metric",
+                  "text": "8 MINUTES",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "ACROSS THE DARK",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 15.77,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 6.96,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.03025,
+            "activeSamplePairs": 11,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20265137,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-number-02",
+      "category": "number",
+      "theme": "mathematics",
+      "aspect": "square",
+      "palette": "cream-forest",
+      "montageRole": "detail",
+      "prompt": "Create a 7-second square metric reveal. Exact copy: THE GOLDEN RATIO / 1.618 / PATTERN WITHIN PATTERN. Style direction: make the number dominant using warm cream, forest green, Fraunces display type, and measured expansion.",
+      "seed": 20266146,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 55.84,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-number-02.mp4",
+      "render": {
+        "elapsedSeconds": 15.46,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "The Golden Ratio",
+          "fps": 30,
+          "width": 1080,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#f0eadf",
+            "foreground": "#19100f",
+            "accent": "#b5651a",
+            "muted": "#6d6055"
+          },
+          "typography": {
+            "display": "fraunces",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "grid",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "metric-golden-ratio",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "metric",
+              "layout": "split",
+              "entrance": "scale",
+              "exit": "shrink",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "THE GOLDEN RATIO",
+                  "emphasis": false
+                },
+                {
+                  "role": "metric",
+                  "text": "1.618",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "PATTERN WITHIN PATTERN",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 83.7,
+        "repaired": true,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 15.63,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 3.62,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.02234,
+            "activeSamplePairs": 3,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20266146,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-number-03",
+      "category": "number",
+      "theme": "creative-work",
+      "aspect": "landscape",
+      "palette": "blue-lime",
+      "montageRole": "energy",
+      "prompt": "Create a 6-second landscape metric reveal. Exact copy: IDEAS CAPTURED / 12,480 / BEFORE THEY VANISHED. Style direction: make the number dominant using cobalt blue, acid lime, technical typography, and clean staggered motion.",
+      "seed": 20267155,
+      "requestedCandidates": 2,
+      "validCandidates": 1,
+      "success": true,
+      "generationSeconds": 53.28,
+      "generationFailures": [
+        "Candidate 1: palette.accent: Accent/background contrast must be at least 3:1"
+      ],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-number-03.mp4",
+      "render": {
+        "elapsedSeconds": 12.57,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "IDEAS CAPTURED",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 180,
+          "palette": {
+            "background": "#f0eadf",
+            "foreground": "#111111",
+            "accent": "#c41e34",
+            "muted": "#665c54"
+          },
+          "typography": {
+            "display": "jetbrains-mono",
+            "body": "jetbrains-mono",
+            "tracking": -0.05,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "particles",
+            "intensity": 0.35
+          },
+          "segments": [
+            {
+              "id": "metric-reveal",
+              "startFrame": 0,
+              "durationInFrames": 180,
+              "kind": "metric",
+              "layout": "left",
+              "entrance": "stagger",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "IDEAS CAPTURED",
+                  "emphasis": false
+                },
+                {
+                  "role": "metric",
+                  "text": "12,480",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "BEFORE THEY VANISHED",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84.29,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 15.77,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 4.9,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 6,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01464,
+            "activeSamplePairs": 4,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20268152,
+        "temperature": 0.7
+      }
+    },
+    {
+      "id": "showcase-number-04",
+      "category": "number",
+      "theme": "time",
+      "aspect": "portrait",
+      "palette": "oxblood-blush",
+      "montageRole": "contrast",
+      "prompt": "Create a 7-second portrait metric reveal. Exact copy: ONE QUIET HOUR / 60 MINUTES / ENTIRELY YOURS. Style direction: make the number dominant using oxblood, pale blush, generous spacing, and calm editorial pacing.",
+      "seed": 20268164,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 39.89,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-number-04.mp4",
+      "render": {
+        "elapsedSeconds": 16.62,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "One quiet hour",
+          "fps": 30,
+          "width": 1080,
+          "height": 1920,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#feebe2",
+            "foreground": "#110c09",
+            "accent": "#4b0000",
+            "muted": "#6d5c54"
+          },
+          "typography": {
+            "display": "fraunces",
+            "body": "inter",
+            "tracking": -0.03,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "grid",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "metric-one-hour",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "metric",
+              "layout": "left",
+              "entrance": "rise",
+              "exit": "shrink",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "ONE QUIET HOUR",
+                  "emphasis": false
+                },
+                {
+                  "role": "metric",
+                  "text": "60 MINUTES",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "ENTIRELY YOURS",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84.44,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 16.84,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 14.01,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.04239,
+            "activeSamplePairs": 3,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20268164,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-philosophy-01",
+      "category": "philosophy",
+      "theme": "curiosity",
+      "aspect": "landscape",
+      "palette": "ivory-red",
+      "montageRole": "breath",
+      "prompt": "Create a 7-second landscape philosophical quote. Exact copy: A BETTER QUESTION / CAN OUTLIVE / A QUICK ANSWER. Style direction: ivory on near-black, one restrained red emphasis, Fraunces display type, and contemplative line-by-line timing.",
+      "seed": 20269173,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 57.18,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-philosophy-01.mp4",
+      "render": {
+        "elapsedSeconds": 17.33,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "A BETTER QUESTION",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#111111",
+            "foreground": "#f2f2f2",
+            "accent": "#e61212",
+            "muted": "#777777"
+          },
+          "typography": {
+            "display": "fraunces",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "orbit",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "quote-question",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "quote",
+              "layout": "left",
+              "entrance": "stagger",
+              "exit": "cut",
+              "lines": [
+                {
+                  "role": "title",
+                  "text": "A BETTER QUESTION",
+                  "emphasis": false
+                },
+                {
+                  "role": "subtitle",
+                  "text": "CAN OUTLIVE",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "A QUICK ANSWER",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84.29,
+        "repaired": true,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 16.87,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 4.01,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01808,
+            "activeSamplePairs": 11,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20269173,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-philosophy-02",
+      "category": "philosophy",
+      "theme": "change",
+      "aspect": "portrait",
+      "palette": "teal-mint",
+      "montageRole": "breath",
+      "prompt": "Create a 7-second portrait philosophical quote. Exact copy: YOU ARE ALLOWED / TO OUTGROW / YOUR FIRST ANSWER. Style direction: pale mint on deep teal, elegant rise motion, clear hierarchy, and a patient final hold.",
+      "seed": 20270182,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 39.48,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-philosophy-02.mp4",
+      "render": {
+        "elapsedSeconds": 16.93,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "You are allowed to outgrow your first answer",
+          "fps": 30,
+          "width": 1080,
+          "height": 1920,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#13171a",
+            "foreground": "#ebfff6",
+            "accent": "#61f2ad",
+            "muted": "#7ca89c"
+          },
+          "typography": {
+            "display": "fraunces",
+            "body": "inter",
+            "tracking": -0.03,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "grid",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "quote-you-are",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "quote",
+              "layout": "left",
+              "entrance": "rise",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "title",
+                  "text": "YOU ARE ALLOWED",
+                  "emphasis": true
+                },
+                {
+                  "role": "title",
+                  "text": "TO OUTGROW",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "YOUR FIRST ANSWER",
+                  "emphasis": true
+                }
+              ]
+            }
+          ]
+        },
+        "score": 75,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 17.31,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 12.71,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.03742,
+            "activeSamplePairs": 3,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20270182,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-philosophy-03",
+      "category": "philosophy",
+      "theme": "attention",
+      "aspect": "square",
+      "palette": "paper-black",
+      "montageRole": "texture",
+      "prompt": "Create a 6-second square philosophical quote. Exact copy: ATTENTION IS HOW / WE TELL THE WORLD / WHAT MATTERS. Style direction: paper white and black ink, editorial serif, subtle print-like depth, and restrained motion.",
+      "seed": 20271191,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 53.73,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-philosophy-03.mp4",
+      "render": {
+        "elapsedSeconds": 11.35,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Attention is how we tell the world what matters",
+          "fps": 30,
+          "width": 1080,
+          "height": 1080,
+          "durationInFrames": 180,
+          "palette": {
+            "background": "#f5f5f2",
+            "foreground": "#111111",
+            "accent": "#d86767",
+            "muted": "#777771"
+          },
+          "typography": {
+            "display": "fraunces",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "quote-attention",
+              "startFrame": 0,
+              "durationInFrames": 180,
+              "kind": "quote",
+              "layout": "left",
+              "entrance": "stagger",
+              "exit": "shrink",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "ATTENTION IS HOW",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "WE TELL THE WORLD",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "WHAT MATTERS",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84.44,
+        "repaired": true,
+        "normalized": [
+          "zeroed disabled accent intensity"
+        ],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 17.29,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 3.17,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 6,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.02038,
+            "activeSamplePairs": 5,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20271191,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-philosophy-04",
+      "category": "philosophy",
+      "theme": "uncertainty",
+      "aspect": "landscape",
+      "palette": "violet-amber",
+      "montageRole": "turn",
+      "prompt": "Create a 7-second landscape philosophical quote. Exact copy: CERTAINTY CLOSES / CURIOSITY OPENS / LEAVE ONE DOOR AJAR. Style direction: midnight violet, warm amber emphasis, geometric type, and a deliberate reveal from left to right.",
+      "seed": 20272200,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 42.45,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-philosophy-04.mp4",
+      "render": {
+        "elapsedSeconds": 15.97,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Certainty closes curiosity opens",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#090816",
+            "foreground": "#ebddff",
+            "accent": "#ffb86b",
+            "muted": "#9286b3"
+          },
+          "typography": {
+            "display": "space-grotesk",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "orbit",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "quote-certainty",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "quote",
+              "layout": "left",
+              "entrance": "stagger",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "CERTAINTY CLOSES",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "CURIOSITY OPENS",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "LEAVE ONE DOOR AJAR",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 85.52,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 15.43,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 11.65,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.0221,
+            "activeSamplePairs": 11,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20272200,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-science-01",
+      "category": "science",
+      "theme": "botany",
+      "aspect": "landscape",
+      "palette": "moss-cream",
+      "montageRole": "organic",
+      "prompt": "Create a 7-second landscape science title. Exact copy: TREES TRADE / LIGHT FOR LIFE / ONE LEAF AT A TIME. Style direction: moss green and warm cream, organic editorial typography, gentle stagger, and a restrained spherical accent.",
+      "seed": 20282099,
+      "requestedCandidates": 3,
+      "validCandidates": 1,
+      "success": true,
+      "generationSeconds": 91.29,
+      "generationFailures": [
+        "Candidate 2: palette.accent: Accent/background contrast must be at least 3:1",
+        "Candidate 3: palette.accent: Accent/background contrast must be at least 3:1"
+      ],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-science-01.mp4",
+      "render": {
+        "elapsedSeconds": 16.58,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Trees trade light for life",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#eee9e4",
+            "foreground": "#201a15",
+            "accent": "#3a5c4c",
+            "muted": "#726b61"
+          },
+          "typography": {
+            "display": "fraunces",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "glass",
+            "intensity": 0.35
+          },
+          "segments": [
+            {
+              "id": "title-trees-trade",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "event",
+              "layout": "split",
+              "entrance": "stagger",
+              "exit": "shrink",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "TREES TRADE",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "LIGHT FOR LIFE",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "ONE LEAF AT A TIME",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 85,
+        "repaired": true,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 14.27,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 6.18,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01422,
+            "activeSamplePairs": 11,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20282099,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-science-02",
+      "category": "science",
+      "theme": "space",
+      "aspect": "landscape",
+      "palette": "black-blue-white",
+      "montageRole": "scale",
+      "prompt": "Create a 7-second landscape cosmic title. Exact copy: WE ARE LOOKING / INTO THE PAST / EVERY TIME WE LOOK UP. Style direction: black, cold white, electric blue detail, immense negative space, and slow cinematic motion.",
+      "seed": 20274218,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 42.37,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-science-02.mp4",
+      "render": {
+        "elapsedSeconds": 15.78,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Looking into the past",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#090816",
+            "foreground": "#ffffff",
+            "accent": "#b59aff",
+            "muted": "#aaa4c2"
+          },
+          "typography": {
+            "display": "space-grotesk",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "orbit",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "title-looking",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "title",
+              "layout": "left",
+              "entrance": "stagger",
+              "exit": "shrink",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "WE ARE LOOKING",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "INTO THE PAST",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "EVERY TIME WE LOOK UP",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 85,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 19.85,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 8.54,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.02055,
+            "activeSamplePairs": 11,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20274218,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-science-03",
+      "category": "science",
+      "theme": "ocean",
+      "aspect": "portrait",
+      "palette": "navy-aqua",
+      "montageRole": "depth",
+      "prompt": "Create a 7-second portrait nature title. Exact copy: BELOW THE SURFACE / ANOTHER WORLD / MOVES IN SILENCE. Style direction: deep navy and luminous aqua, layered depth, calm vertical movement, and no extra text.",
+      "seed": 20275227,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 41.5,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-science-03.mp4",
+      "render": {
+        "elapsedSeconds": 15.08,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Below the surface",
+          "fps": 30,
+          "width": 1080,
+          "height": 1920,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#091118",
+            "foreground": "#ebfff6",
+            "accent": "#61f2ad",
+            "muted": "#7ca9b7"
+          },
+          "typography": {
+            "display": "space-grotesk",
+            "body": "inter",
+            "tracking": -0.03,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "orbit",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "title-nature-below-the-surface",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "title",
+              "layout": "left",
+              "entrance": "rise",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "BELOW THE SURFACE",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "ANOTHER WORLD",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "MOVES IN SILENCE",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84.62,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 18.25,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 13.41,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.02034,
+            "activeSamplePairs": 10,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20275227,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-culture-01",
+      "category": "culture",
+      "theme": "chai",
+      "aspect": "landscape",
+      "palette": "terracotta-cream",
+      "montageRole": "warmth",
+      "prompt": "Create a 6-second landscape cultural title. Exact copy: CHAI AT FIVE / STORIES UNTIL SEVEN / TIME WELL POURED. Style direction: terracotta and cream, warm editorial typography, playful steam-like motion, and a comfortable final hold.",
+      "seed": 20276236,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 43.05,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-culture-01.mp4",
+      "render": {
+        "elapsedSeconds": 12.82,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Chai at Five",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 180,
+          "palette": {
+            "background": "#eee5dd",
+            "foreground": "#201a15",
+            "accent": "#d85f13",
+            "muted": "#716b62"
+          },
+          "typography": {
+            "display": "fraunces",
+            "body": "inter",
+            "tracking": -0.03,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "particles",
+            "intensity": 0.35
+          },
+          "segments": [
+            {
+              "id": "title-chai",
+              "startFrame": 0,
+              "durationInFrames": 180,
+              "kind": "title",
+              "layout": "left",
+              "entrance": "rise",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "CHAI AT FIVE",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "STORIES UNTIL SEVEN",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "TIME WELL POURED",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 85.52,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 13.84,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 3.03,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 6,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01456,
+            "activeSamplePairs": 4,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20276236,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-culture-02",
+      "category": "culture",
+      "theme": "music",
+      "aspect": "square",
+      "palette": "magenta-orange",
+      "montageRole": "energy",
+      "prompt": "Create a 6-second square music title. Exact copy: TURN IT UP / FIND THE RHYTHM / LOSE THE CLOCK. Style direction: hot magenta and orange, bold staggered typography, syncopated scale motion, and energetic restraint.",
+      "seed": 20277245,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 41.38,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-culture-02.mp4",
+      "render": {
+        "elapsedSeconds": 12.56,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "TURN IT UP",
+          "fps": 30,
+          "width": 1080,
+          "height": 1080,
+          "durationInFrames": 180,
+          "palette": {
+            "background": "#130109",
+            "foreground": "#fff1ed",
+            "accent": "#ff765f",
+            "muted": "#c69b94"
+          },
+          "typography": {
+            "display": "space-grotesk",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "orbit",
+            "intensity": 0.35
+          },
+          "segments": [
+            {
+              "id": "title-turn-it-up",
+              "startFrame": 0,
+              "durationInFrames": 180,
+              "kind": "title",
+              "layout": "split",
+              "entrance": "stagger",
+              "exit": "shrink",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "TURN IT UP",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "FIND THE RHYTHM",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "LOSE THE CLOCK",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 18.4,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 7.73,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 6,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.02755,
+            "activeSamplePairs": 11,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20277245,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-culture-03",
+      "category": "culture",
+      "theme": "books",
+      "aspect": "landscape",
+      "palette": "burgundy-parchment",
+      "montageRole": "texture",
+      "prompt": "Create a 7-second landscape reading title. Exact copy: OPEN A BOOK / BORROW A LIFE / RETURN CHANGED. Style direction: burgundy and parchment, literary serif typography, page-like wipe motion, and quiet elegance.",
+      "seed": 20278254,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 50.6,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-culture-03.mp4",
+      "render": {
+        "elapsedSeconds": 14.51,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Open a book borrow a life return changed",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#eedcda",
+            "foreground": "#171713",
+            "accent": "#4b0000",
+            "muted": "#7b706a"
+          },
+          "typography": {
+            "display": "fraunces",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "title-open-a-book",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "title",
+              "layout": "left",
+              "entrance": "wipe",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "OPEN A BOOK",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "BORROW A LIFE",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "RETURN CHANGED",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84.62,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 13.6,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 12.23,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01628,
+            "activeSamplePairs": 3,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20278254,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-product-01",
+      "category": "product",
+      "theme": "focus-app",
+      "aspect": "landscape",
+      "palette": "graphite-mint",
+      "montageRole": "commercial",
+      "prompt": "Create a polished 7-second landscape product reveal. Exact copy: STILLPOINT / FOCUS WITHOUT FRICTION / PRIVATE BY DEFAULT. Style direction: graphite and technical mint, clean sans serif hierarchy, restrained depth, and precise motion.",
+      "seed": 20279263,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 36.88,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-product-01.mp4",
+      "render": {
+        "elapsedSeconds": 14.52,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Focus without friction",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#f5f3f4",
+            "foreground": "#111111",
+            "accent": "#d2374c",
+            "muted": "#777777"
+          },
+          "typography": {
+            "display": "jetbrains-mono",
+            "body": "jetbrains-mono",
+            "tracking": -0.03,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "product-focus",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "product",
+              "layout": "left",
+              "entrance": "rise",
+              "exit": "shrink",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "STILLPOINT",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "FOCUS WITHOUT FRICTION",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "PRIVATE BY DEFAULT",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 84.44,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 17.09,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 4.33,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01494,
+            "activeSamplePairs": 3,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20279263,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-product-02",
+      "category": "product",
+      "theme": "creative-tool",
+      "aspect": "portrait",
+      "palette": "cobalt-coral",
+      "montageRole": "commercial",
+      "prompt": "Create a polished 7-second portrait product reveal. Exact copy: MOSAIC / EVERY IDEA HAS A PLACE / BUILD THE BIGGER PICTURE. Style direction: cobalt and coral, geometric typography, modular motion, and one restrained three-dimensional accent.",
+      "seed": 20280272,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 39.64,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-product-02.mp4",
+      "render": {
+        "elapsedSeconds": 15.8,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Mosaic product reveal",
+          "fps": 30,
+          "width": 1080,
+          "height": 1920,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#f0eadf",
+            "foreground": "#171713",
+            "accent": "#d25873",
+            "muted": "#6d6a61"
+          },
+          "typography": {
+            "display": "space-grotesk",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "orbit",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "product-mosaic",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "product",
+              "layout": "split",
+              "entrance": "scale",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "MOSAIC",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "EVERY IDEA HAS A PLACE",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "BUILD THE BIGGER PICTURE",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 85.52,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 15.01,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 3.26,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01143,
+            "activeSamplePairs": 9,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20280272,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-event-01",
+      "category": "event",
+      "theme": "design-conference",
+      "aspect": "landscape",
+      "palette": "black-vermilion",
+      "montageRole": "announcement",
+      "prompt": "Create a 7-second landscape event announcement. Exact copy: DELHI · 18 OCT / TYPE IN MOTION / INDIA HABITAT CENTRE · 6 PM. Style direction: black, white, and vermilion, architectural hierarchy, precise grid rhythm, and readable details.",
+      "seed": 20281281,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 37.5,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-event-01.mp4",
+      "render": {
+        "elapsedSeconds": 17.95,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Type in Motion",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#0b0d12",
+            "foreground": "#f6f4ef",
+            "accent": "#ff5c33",
+            "muted": "#9298a6"
+          },
+          "typography": {
+            "display": "inter",
+            "body": "inter",
+            "tracking": -0.03,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "grid",
+            "intensity": 0.3
+          },
+          "segments": [
+            {
+              "id": "segment-1",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "event",
+              "layout": "left",
+              "entrance": "stagger",
+              "exit": "cut",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "DELHI · 18 OCT",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "TYPE IN MOTION",
+                  "emphasis": true
+                },
+                {
+                  "role": "subtitle",
+                  "text": "INDIA HABITAT CENTRE · 6 PM",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 85.38,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 17.68,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 6.32,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01229,
+            "activeSamplePairs": 3,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20281281,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-event-02",
+      "category": "event",
+      "theme": "night-walk",
+      "aspect": "square",
+      "palette": "navy-gold",
+      "montageRole": "announcement",
+      "prompt": "Create a 7-second square event announcement. Exact copy: JAIPUR · 9 PM / AFTER DARK / A WALK THROUGH LIGHT AND SHADOW. Style direction: midnight navy and muted gold, cinematic editorial type, gentle pacing, and subtle depth.",
+      "seed": 20282290,
+      "requestedCandidates": 2,
+      "validCandidates": 1,
+      "success": true,
+      "generationSeconds": 61.96,
+      "generationFailures": [
+        "Candidate 1: Content policy: preserve exact copy line boundaries (missing: JAIPUR · 9 PM / AFTER DARK; unexpected: JAIPUR · 9 PM / AFTER DARK)"
+      ],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-event-02.mp4",
+      "render": {
+        "elapsedSeconds": 13.17,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "JAIPUR · 9 PM",
+          "fps": 30,
+          "width": 1080,
+          "height": 1080,
+          "durationInFrames": 210,
+          "palette": {
+            "background": "#070c13",
+            "foreground": "#ebddaa",
+            "accent": "#5639ff",
+            "muted": "#92a1b0"
+          },
+          "typography": {
+            "display": "inter",
+            "body": "inter",
+            "tracking": -0.03,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "title-event-jaipur",
+              "startFrame": 0,
+              "durationInFrames": 210,
+              "kind": "event",
+              "layout": "split",
+              "entrance": "rise",
+              "exit": "shrink",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "JAIPUR · 9 PM",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "AFTER DARK",
+                  "emphasis": false
+                },
+                {
+                  "role": "subtitle",
+                  "text": "A WALK THROUGH LIGHT AND SHADOW",
+                  "emphasis": true
+                }
+              ]
+            }
+          ]
+        },
+        "score": 85.19,
+        "repaired": true,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 14.43,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 3.2,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 7,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.0225,
+            "activeSamplePairs": 3,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20283287,
+        "temperature": 0.7
+      }
+    },
+    {
+      "id": "showcase-outro-01",
+      "category": "outro",
+      "theme": "creative-courage",
+      "aspect": "landscape",
+      "palette": "white-black-coral",
+      "montageRole": "pre-close",
+      "prompt": "Create a 6-second landscape closing card. Exact copy: MAKE SOMETHING / WORTH REMEMBERING. Style direction: white on black with one coral accent, confident scale motion, a long final hold, and no additional text.",
+      "seed": 20283299,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 49.73,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-outro-01.mp4",
+      "render": {
+        "elapsedSeconds": 12.51,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "Make something worth remembering",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 180,
+          "palette": {
+            "background": "#000000",
+            "foreground": "#ffffff",
+            "accent": "#ff7043",
+            "muted": "#aaa490"
+          },
+          "typography": {
+            "display": "space-grotesk",
+            "body": "inter",
+            "tracking": -0.05,
+            "uppercaseTitles": false
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "title-make-something",
+              "startFrame": 0,
+              "durationInFrames": 180,
+              "kind": "outro",
+              "layout": "left",
+              "entrance": "scale",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "title",
+                  "text": "MAKE SOMETHING",
+                  "emphasis": true
+                },
+                {
+                  "role": "eyebrow",
+                  "text": "WORTH REMEMBERING",
+                  "emphasis": false
+                }
+              ]
+            }
+          ]
+        },
+        "score": 83.08,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 21,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 7.65,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 6,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01111,
+            "activeSamplePairs": 4,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20283299,
+        "temperature": 0.45
+      }
+    },
+    {
+      "id": "showcase-outro-02",
+      "category": "outro",
+      "theme": "brand",
+      "aspect": "landscape",
+      "palette": "ivory-charcoal",
+      "montageRole": "final-card",
+      "prompt": "Create a 6-second landscape final brand card. Exact copy: FANNE KHAN / WORDS THAT MOVE. Style direction: warm ivory on charcoal, refined editorial hierarchy, measured entrance, subtle depth, and a clean final hold.",
+      "seed": 20284308,
+      "requestedCandidates": 2,
+      "validCandidates": 2,
+      "success": true,
+      "generationSeconds": 34.41,
+      "generationFailures": [],
+      "evaluationFailures": [],
+      "outputPath": "out/showcase/showcase-outro-02.mp4",
+      "render": {
+        "elapsedSeconds": 12.53,
+        "renderer": "angle",
+        "scale": 1
+      },
+      "winner": {
+        "spec": {
+          "version": "1.0",
+          "name": "FANNE KHAN",
+          "fps": 30,
+          "width": 1920,
+          "height": 1080,
+          "durationInFrames": 180,
+          "palette": {
+            "background": "#111111",
+            "foreground": "#f2f2f2",
+            "accent": "#ff2a2a",
+            "muted": "#777777"
+          },
+          "typography": {
+            "display": "fraunces",
+            "body": "inter",
+            "tracking": -0.03,
+            "uppercaseTitles": true
+          },
+          "accent": {
+            "type": "none",
+            "intensity": 0
+          },
+          "segments": [
+            {
+              "id": "title-fanne-khan",
+              "startFrame": 0,
+              "durationInFrames": 180,
+              "kind": "title",
+              "layout": "left",
+              "entrance": "rise",
+              "exit": "fade",
+              "lines": [
+                {
+                  "role": "eyebrow",
+                  "text": "FANNE KHAN",
+                  "emphasis": false
+                },
+                {
+                  "role": "title",
+                  "text": "WORDS THAT MOVE",
+                  "emphasis": true
+                }
+              ]
+            }
+          ]
+        },
+        "score": 83.7,
+        "repaired": false,
+        "normalized": [],
+        "hardGates": {
+          "foregroundContrast": {
+            "value": 16.87,
+            "pass": true
+          },
+          "accentContrast": {
+            "value": 5.05,
+            "pass": true
+          },
+          "readableDuration": {
+            "seconds": 6,
+            "pass": true
+          },
+          "motionPresent": {
+            "peak": 0.01013,
+            "activeSamplePairs": 4,
+            "pass": true
+          }
+        },
+        "candidateSeed": 20284308,
+        "temperature": 0.45
+      }
+    }
+  ]
+}

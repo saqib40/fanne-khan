@@ -11,6 +11,7 @@
     "api": "tsx backend/src/server.ts",
     "demo": "bash scripts/start-demo.sh",
     "demo:backup": "tsx backend/src/render-demo-backup.ts",
+    "showcase:generate": "tsx backend/src/generate-showcase.ts",
     "inference:serve": "uv run python training/inference_server.py",
     "generate": "tsx backend/src/cli.ts",
     "generate:base": "MODEL_BACKEND=ollama tsx backend/src/cli.ts",

@@ -1,0 +1,218 @@
+[
+  {
+    "id": "showcase-joke-01",
+    "category": "joke",
+    "theme": "programming",
+    "aspect": "landscape",
+    "palette": "charcoal-coral",
+    "montageRole": "hook",
+    "prompt": "Create a 6-second landscape kinetic joke. Exact copy: I TOLD MY CODE / TO TAKE A BREAK / IT THREW AN EXCEPTION. Style direction: warm ivory on deep charcoal, one coral accent, crisp staggered timing, and hold the punchline."
+  },
+  {
+    "id": "showcase-joke-02",
+    "category": "joke",
+    "theme": "sleep",
+    "aspect": "square",
+    "palette": "lavender-aubergine",
+    "montageRole": "rhythm",
+    "prompt": "Create a 6-second square kinetic joke. Exact copy: MY BED AND I / ARE PERFECT / THE ALARM IS JEALOUS. Style direction: pale lavender on aubergine, soft editorial type, playful scale motion, and a dry final hold."
+  },
+  {
+    "id": "showcase-joke-03",
+    "category": "joke",
+    "theme": "internet",
+    "aspect": "portrait",
+    "palette": "cyan-navy",
+    "montageRole": "contrast",
+    "prompt": "Create a 6-second portrait technical joke. Exact copy: I HAVE A JOKE / ABOUT UDP / YOU MAY NOT GET IT. Style direction: electric cyan on midnight navy, JetBrains Mono, precise wipe motion, and no extra text."
+  },
+  {
+    "id": "showcase-joke-04",
+    "category": "joke",
+    "theme": "meetings",
+    "aspect": "landscape",
+    "palette": "black-yellow",
+    "montageRole": "rhythm",
+    "prompt": "Create a 7-second landscape kinetic joke. Exact copy: THIS MEETING / COULD BE AN EMAIL / THIS EMAIL COULD BE A NAP. Style direction: black and solar yellow, bold geometric hierarchy, quick setup, slower punchline, and restrained accents."
+  },
+  {
+    "id": "showcase-number-01",
+    "category": "number",
+    "theme": "astronomy",
+    "aspect": "landscape",
+    "palette": "indigo-silver",
+    "montageRole": "wonder",
+    "prompt": "Create a 7-second landscape metric reveal. Exact copy: SUNLIGHT TO EARTH / 8 MINUTES / ACROSS THE DARK. Style direction: make the number dominant using deep indigo, silver white, and a subtle orbital accent."
+  },
+  {
+    "id": "showcase-number-02",
+    "category": "number",
+    "theme": "mathematics",
+    "aspect": "square",
+    "palette": "cream-forest",
+    "montageRole": "detail",
+    "prompt": "Create a 7-second square metric reveal. Exact copy: THE GOLDEN RATIO / 1.618 / PATTERN WITHIN PATTERN. Style direction: make the number dominant using warm cream, forest green, Fraunces display type, and measured expansion."
+  },
+  {
+    "id": "showcase-number-03",
+    "category": "number",
+    "theme": "creative-work",
+    "aspect": "landscape",
+    "palette": "blue-lime",
+    "montageRole": "energy",
+    "prompt": "Create a 6-second landscape metric reveal. Exact copy: IDEAS CAPTURED / 12,480 / BEFORE THEY VANISHED. Style direction: make the number dominant using cobalt blue, acid lime, technical typography, and clean staggered motion."
+  },
+  {
+    "id": "showcase-number-04",
+    "category": "number",
+    "theme": "time",
+    "aspect": "portrait",
+    "palette": "oxblood-blush",
+    "montageRole": "contrast",
+    "prompt": "Create a 7-second portrait metric reveal. Exact copy: ONE QUIET HOUR / 60 MINUTES / ENTIRELY YOURS. Style direction: make the number dominant using oxblood, pale blush, generous spacing, and calm editorial pacing."
+  },
+  {
+    "id": "showcase-philosophy-01",
+    "category": "philosophy",
+    "theme": "curiosity",
+    "aspect": "landscape",
+    "palette": "ivory-red",
+    "montageRole": "breath",
+    "prompt": "Create a 7-second landscape philosophical quote. Exact copy: A BETTER QUESTION / CAN OUTLIVE / A QUICK ANSWER. Style direction: ivory on near-black, one restrained red emphasis, Fraunces display type, and contemplative line-by-line timing."
+  },
+  {
+    "id": "showcase-philosophy-02",
+    "category": "philosophy",
+    "theme": "change",
+    "aspect": "portrait",
+    "palette": "teal-mint",
+    "montageRole": "breath",
+    "prompt": "Create a 7-second portrait philosophical quote. Exact copy: YOU ARE ALLOWED / TO OUTGROW / YOUR FIRST ANSWER. Style direction: pale mint on deep teal, elegant rise motion, clear hierarchy, and a patient final hold."
+  },
+  {
+    "id": "showcase-philosophy-03",
+    "category": "philosophy",
+    "theme": "attention",
+    "aspect": "square",
+    "palette": "paper-black",
+    "montageRole": "texture",
+    "prompt": "Create a 6-second square philosophical quote. Exact copy: ATTENTION IS HOW / WE TELL THE WORLD / WHAT MATTERS. Style direction: paper white and black ink, editorial serif, subtle print-like depth, and restrained motion."
+  },
+  {
+    "id": "showcase-philosophy-04",
+    "category": "philosophy",
+    "theme": "uncertainty",
+    "aspect": "landscape",
+    "palette": "violet-amber",
+    "montageRole": "turn",
+    "prompt": "Create a 7-second landscape philosophical quote. Exact copy: CERTAINTY CLOSES / CURIOSITY OPENS / LEAVE ONE DOOR AJAR. Style direction: midnight violet, warm amber emphasis, geometric type, and a deliberate reveal from left to right."
+  },
+  {
+    "id": "showcase-science-01",
+    "category": "science",
+    "theme": "botany",
+    "aspect": "landscape",
+    "palette": "moss-cream",
+    "montageRole": "organic",
+    "prompt": "Create a 7-second landscape science title. Exact copy: TREES TRADE / LIGHT FOR LIFE / ONE LEAF AT A TIME. Style direction: moss green and warm cream, organic editorial typography, gentle stagger, and a restrained spherical accent."
+  },
+  {
+    "id": "showcase-science-02",
+    "category": "science",
+    "theme": "space",
+    "aspect": "landscape",
+    "palette": "black-blue-white",
+    "montageRole": "scale",
+    "prompt": "Create a 7-second landscape cosmic title. Exact copy: WE ARE LOOKING / INTO THE PAST / EVERY TIME WE LOOK UP. Style direction: black, cold white, electric blue detail, immense negative space, and slow cinematic motion."
+  },
+  {
+    "id": "showcase-science-03",
+    "category": "science",
+    "theme": "ocean",
+    "aspect": "portrait",
+    "palette": "navy-aqua",
+    "montageRole": "depth",
+    "prompt": "Create a 7-second portrait nature title. Exact copy: BELOW THE SURFACE / ANOTHER WORLD / MOVES IN SILENCE. Style direction: deep navy and luminous aqua, layered depth, calm vertical movement, and no extra text."
+  },
+  {
+    "id": "showcase-culture-01",
+    "category": "culture",
+    "theme": "chai",
+    "aspect": "landscape",
+    "palette": "terracotta-cream",
+    "montageRole": "warmth",
+    "prompt": "Create a 6-second landscape cultural title. Exact copy: CHAI AT FIVE / STORIES UNTIL SEVEN / TIME WELL POURED. Style direction: terracotta and cream, warm editorial typography, playful steam-like motion, and a comfortable final hold."
+  },
+  {
+    "id": "showcase-culture-02",
+    "category": "culture",
+    "theme": "music",
+    "aspect": "square",
+    "palette": "magenta-orange",
+    "montageRole": "energy",
+    "prompt": "Create a 6-second square music title. Exact copy: TURN IT UP / FIND THE RHYTHM / LOSE THE CLOCK. Style direction: hot magenta and orange, bold staggered typography, syncopated scale motion, and energetic restraint."
+  },
+  {
+    "id": "showcase-culture-03",
+    "category": "culture",
+    "theme": "books",
+    "aspect": "landscape",
+    "palette": "burgundy-parchment",
+    "montageRole": "texture",
+    "prompt": "Create a 7-second landscape reading title. Exact copy: OPEN A BOOK / BORROW A LIFE / RETURN CHANGED. Style direction: burgundy and parchment, literary serif typography, page-like wipe motion, and quiet elegance."
+  },
+  {
+    "id": "showcase-product-01",
+    "category": "product",
+    "theme": "focus-app",
+    "aspect": "landscape",
+    "palette": "graphite-mint",
+    "montageRole": "commercial",
+    "prompt": "Create a polished 7-second landscape product reveal. Exact copy: STILLPOINT / FOCUS WITHOUT FRICTION / PRIVATE BY DEFAULT. Style direction: graphite and technical mint, clean sans serif hierarchy, restrained depth, and precise motion."
+  },
+  {
+    "id": "showcase-product-02",
+    "category": "product",
+    "theme": "creative-tool",
+    "aspect": "portrait",
+    "palette": "cobalt-coral",
+    "montageRole": "commercial",
+    "prompt": "Create a polished 7-second portrait product reveal. Exact copy: MOSAIC / EVERY IDEA HAS A PLACE / BUILD THE BIGGER PICTURE. Style direction: cobalt and coral, geometric typography, modular motion, and one restrained three-dimensional accent."
+  },
+  {
+    "id": "showcase-event-01",
+    "category": "event",
+    "theme": "design-conference",
+    "aspect": "landscape",
+    "palette": "black-vermilion",
+    "montageRole": "announcement",
+    "prompt": "Create a 7-second landscape event announcement. Exact copy: DELHI · 18 OCT / TYPE IN MOTION / INDIA HABITAT CENTRE · 6 PM. Style direction: black, white, and vermilion, architectural hierarchy, precise grid rhythm, and readable details."
+  },
+  {
+    "id": "showcase-event-02",
+    "category": "event",
+    "theme": "night-walk",
+    "aspect": "square",
+    "palette": "navy-gold",
+    "montageRole": "announcement",
+    "prompt": "Create a 7-second square event announcement. Exact copy: JAIPUR · 9 PM / AFTER DARK / A WALK THROUGH LIGHT AND SHADOW. Style direction: midnight navy and muted gold, cinematic editorial type, gentle pacing, and subtle depth."
+  },
+  {
+    "id": "showcase-outro-01",
+    "category": "outro",
+    "theme": "creative-courage",
+    "aspect": "landscape",
+    "palette": "white-black-coral",
+    "montageRole": "pre-close",
+    "prompt": "Create a 6-second landscape closing card. Exact copy: MAKE SOMETHING / WORTH REMEMBERING. Style direction: white on black with one coral accent, confident scale motion, a long final hold, and no additional text."
+  },
+  {
+    "id": "showcase-outro-02",
+    "category": "outro",
+    "theme": "brand",
+    "aspect": "landscape",
+    "palette": "ivory-charcoal",
+    "montageRole": "final-card",
+    "prompt": "Create a 6-second landscape final brand card. Exact copy: FANNE KHAN / WORDS THAT MOVE. Style direction: warm ivory on charcoal, refined editorial hierarchy, measured entrance, subtle depth, and a clean final hold."
+  }
+]
